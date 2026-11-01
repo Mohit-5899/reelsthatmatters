@@ -1,0 +1,825 @@
+{
+ "duration": 27.943,
+ "silences": [
+  [
+   0.9,
+   1.08
+  ],
+  [
+   3.17,
+   3.47
+  ],
+  [
+   3.49,
+   3.75
+  ],
+  [
+   4.01,
+   4.23
+  ],
+  [
+   4.56,
+   4.7
+  ],
+  [
+   5.33,
+   5.55
+  ],
+  [
+   6.12,
+   6.27
+  ],
+  [
+   7.21,
+   7.36
+  ],
+  [
+   8.22,
+   8.36
+  ],
+  [
+   9.48,
+   9.87
+  ],
+  [
+   10.5,
+   10.8
+  ],
+  [
+   11.46,
+   11.61
+  ],
+  [
+   12.3,
+   12.62
+  ],
+  [
+   13.14,
+   13.31
+  ],
+  [
+   13.77,
+   13.96
+  ],
+  [
+   14.4,
+   14.56
+  ],
+  [
+   15.18,
+   15.52
+  ],
+  [
+   16.04,
+   16.43
+  ],
+  [
+   17.01,
+   17.49
+  ],
+  [
+   18.28,
+   18.42
+  ],
+  [
+   19.8,
+   20.09
+  ],
+  [
+   20.64,
+   20.76
+  ],
+  [
+   22.38,
+   22.67
+  ],
+  [
+   23.1,
+   23.25
+  ],
+  [
+   24.34,
+   24.46
+  ],
+  [
+   25.04,
+   27.94
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "ground": "dark",
+   "firstWord": 0
+  },
+  {
+   "id": "problems",
+   "ground": "dark",
+   "firstWord": 14
+  },
+  {
+   "id": "open",
+   "ground": "light",
+   "firstWord": 36
+  },
+  {
+   "id": "door",
+   "ground": "light",
+   "firstWord": 56
+  },
+  {
+   "id": "end",
+   "ground": "light",
+   "firstWord": 65
+  }
+ ],
+ "blocks": [
+  {
+   "words": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "slot": "top",
+   "scene": 0
+  },
+  {
+   "words": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "slot": "top",
+   "scene": 0
+  },
+  {
+   "words": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "slot": "top",
+   "scene": 0,
+   "br": 11
+  },
+  {
+   "words": [
+    14,
+    15
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 19
+  },
+  {
+   "words": [
+    22,
+    23,
+    24
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    25,
+    26,
+    27
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    33,
+    34,
+    35
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    36,
+    37,
+    38
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    39,
+    40
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    41,
+    42,
+    43
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    44,
+    45
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    46,
+    47,
+    48,
+    49,
+    50
+   ],
+   "slot": "top",
+   "scene": 2,
+   "br": 48
+  },
+  {
+   "words": [
+    51,
+    52,
+    53,
+    54,
+    55
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    56,
+    57,
+    58,
+    59,
+    60
+   ],
+   "slot": "top",
+   "scene": 3
+  },
+  {
+   "words": [
+    61,
+    62,
+    63,
+    64
+   ],
+   "slot": "top",
+   "scene": 3
+  },
+  {
+   "words": [
+    65
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    66,
+    67,
+    68,
+    69,
+    70
+   ],
+   "slot": "top",
+   "scene": 4
+  }
+ ],
+ "words": [
+  {
+   "w": "Raat",
+   "key": false,
+   "emoji": null,
+   "t": 0.0,
+   "e": 0.155
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 0.155,
+   "e": 0.311
+  },
+  {
+   "w": "gyarah",
+   "key": true,
+   "emoji": null,
+   "t": 0.311,
+   "e": 0.621
+  },
+  {
+   "w": "baje.",
+   "key": false,
+   "emoji": null,
+   "t": 0.621,
+   "e": 0.932
+  },
+  {
+   "w": "Kal",
+   "key": false,
+   "emoji": null,
+   "t": 1.082,
+   "e": 1.213
+  },
+  {
+   "w": "subah",
+   "key": false,
+   "emoji": null,
+   "t": 1.213,
+   "e": 1.474
+  },
+  {
+   "w": "presentation",
+   "key": true,
+   "emoji": null,
+   "t": 1.474,
+   "e": 1.996
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 1.996,
+   "e": 2.126
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 2.127,
+   "e": 2.257
+  },
+  {
+   "w": "printer",
+   "key": false,
+   "emoji": null,
+   "t": 2.257,
+   "e": 2.518
+  },
+  {
+   "w": "ne",
+   "key": false,
+   "emoji": null,
+   "t": 2.518,
+   "e": 2.649
+  },
+  {
+   "w": "dhokha",
+   "key": true,
+   "emoji": null,
+   "t": 2.649,
+   "e": 2.91
+  },
+  {
+   "w": "de",
+   "key": false,
+   "emoji": null,
+   "t": 2.91,
+   "e": 3.04
+  },
+  {
+   "w": "diya.",
+   "key": false,
+   "emoji": null,
+   "t": 3.04,
+   "e": 3.171
+  },
+  {
+   "w": "Doodh",
+   "key": true,
+   "emoji": null,
+   "t": 3.471,
+   "e": 3.833
+  },
+  {
+   "w": "khatam.",
+   "key": false,
+   "emoji": null,
+   "t": 3.833,
+   "e": 4.558
+  },
+  {
+   "w": "Dost",
+   "key": false,
+   "emoji": null,
+   "t": 4.708,
+   "e": 4.915
+  },
+  {
+   "w": "aa",
+   "key": false,
+   "emoji": null,
+   "t": 4.915,
+   "e": 5.123
+  },
+  {
+   "w": "gaye,",
+   "key": false,
+   "emoji": null,
+   "t": 5.123,
+   "e": 5.33
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 5.55,
+   "e": 5.693
+  },
+  {
+   "w": "chips",
+   "key": true,
+   "emoji": null,
+   "t": 5.694,
+   "e": 5.837
+  },
+  {
+   "w": "nahi.",
+   "key": false,
+   "emoji": null,
+   "t": 5.837,
+   "e": 6.124
+  },
+  {
+   "w": "Baby",
+   "key": false,
+   "emoji": null,
+   "t": 6.274,
+   "e": 6.649
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 6.649,
+   "e": 6.836
+  },
+  {
+   "w": "diapers?",
+   "key": true,
+   "emoji": null,
+   "t": 6.836,
+   "e": 7.211
+  },
+  {
+   "w": "Woh",
+   "key": false,
+   "emoji": null,
+   "t": 7.361,
+   "e": 7.575
+  },
+  {
+   "w": "bhi",
+   "key": false,
+   "emoji": null,
+   "t": 7.575,
+   "e": 7.789
+  },
+  {
+   "w": "khatam.",
+   "key": false,
+   "emoji": null,
+   "t": 7.79,
+   "e": 8.218
+  },
+  {
+   "w": "Upar",
+   "key": false,
+   "emoji": null,
+   "t": 8.368,
+   "e": 8.615
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 8.615,
+   "e": 8.739
+  },
+  {
+   "w": "mummy",
+   "key": false,
+   "emoji": null,
+   "t": 8.739,
+   "e": 8.986
+  },
+  {
+   "w": "ka",
+   "key": false,
+   "emoji": null,
+   "t": 8.986,
+   "e": 9.109
+  },
+  {
+   "w": "message,",
+   "key": true,
+   "emoji": null,
+   "t": 9.109,
+   "e": 9.48
+  },
+  {
+   "w": "dhaniya",
+   "key": true,
+   "emoji": null,
+   "t": 9.87,
+   "e": 10.124
+  },
+  {
+   "w": "le",
+   "key": false,
+   "emoji": null,
+   "t": 10.124,
+   "e": 10.252
+  },
+  {
+   "w": "aana!",
+   "key": false,
+   "emoji": null,
+   "t": 10.252,
+   "e": 10.506
+  },
+  {
+   "w": "Tension",
+   "key": false,
+   "emoji": null,
+   "t": 10.806,
+   "e": 11.133
+  },
+  {
+   "w": "mat",
+   "key": false,
+   "emoji": null,
+   "t": 11.133,
+   "e": 11.297
+  },
+  {
+   "w": "lo.",
+   "key": false,
+   "emoji": null,
+   "t": 11.297,
+   "e": 11.461
+  },
+  {
+   "w": "Blinkit",
+   "key": true,
+   "emoji": null,
+   "t": 11.611,
+   "e": 11.967
+  },
+  {
+   "w": "kholo.",
+   "key": false,
+   "emoji": null,
+   "t": 11.967,
+   "e": 12.323
+  },
+  {
+   "w": "Printout,",
+   "key": true,
+   "emoji": null,
+   "t": 12.623,
+   "e": 13.14
+  },
+  {
+   "w": "doodh,",
+   "key": false,
+   "emoji": null,
+   "t": 13.31,
+   "e": 13.77
+  },
+  {
+   "w": "chips,",
+   "key": false,
+   "emoji": null,
+   "t": 13.96,
+   "e": 14.4
+  },
+  {
+   "w": "diapers,",
+   "key": false,
+   "emoji": null,
+   "t": 14.56,
+   "e": 15.18
+  },
+  {
+   "w": "dawaiyan,",
+   "key": false,
+   "emoji": null,
+   "t": 15.52,
+   "e": 15.78
+  },
+  {
+   "w": "pet",
+   "key": false,
+   "emoji": null,
+   "t": 15.78,
+   "e": 15.91
+  },
+  {
+   "w": "food,",
+   "key": false,
+   "emoji": null,
+   "t": 15.91,
+   "e": 16.04
+  },
+  {
+   "w": "phone",
+   "key": false,
+   "emoji": null,
+   "t": 16.43,
+   "e": 17.168
+  },
+  {
+   "w": "charger",
+   "key": true,
+   "emoji": null,
+   "t": 17.168,
+   "e": 17.905
+  },
+  {
+   "w": "bhi.",
+   "key": false,
+   "emoji": null,
+   "t": 17.905,
+   "e": 18.274
+  },
+  {
+   "w": "Tees",
+   "key": true,
+   "emoji": null,
+   "t": 18.424,
+   "e": 18.596
+  },
+  {
+   "w": "hazaar",
+   "key": false,
+   "emoji": null,
+   "t": 18.596,
+   "e": 18.939
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 18.939,
+   "e": 19.111
+  },
+  {
+   "w": "zyada",
+   "key": false,
+   "emoji": null,
+   "t": 19.111,
+   "e": 19.454
+  },
+  {
+   "w": "products.",
+   "key": false,
+   "emoji": null,
+   "t": 19.454,
+   "e": 19.798
+  },
+  {
+   "w": "Ek",
+   "key": false,
+   "emoji": null,
+   "t": 20.098,
+   "e": 20.369
+  },
+  {
+   "w": "app,",
+   "key": true,
+   "emoji": null,
+   "t": 20.369,
+   "e": 20.64
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 20.76,
+   "e": 20.907
+  },
+  {
+   "w": "sab",
+   "key": false,
+   "emoji": null,
+   "t": 20.907,
+   "e": 21.054
+  },
+  {
+   "w": "kuch",
+   "key": false,
+   "emoji": null,
+   "t": 21.054,
+   "e": 21.201
+  },
+  {
+   "w": "seedha",
+   "key": false,
+   "emoji": null,
+   "t": 21.201,
+   "e": 21.495
+  },
+  {
+   "w": "aapke",
+   "key": false,
+   "emoji": null,
+   "t": 21.495,
+   "e": 21.789
+  },
+  {
+   "w": "darwaze",
+   "key": true,
+   "emoji": null,
+   "t": 21.789,
+   "e": 22.23
+  },
+  {
+   "w": "tak.",
+   "key": false,
+   "emoji": null,
+   "t": 22.23,
+   "e": 22.377
+  },
+  {
+   "w": "Blinkit.",
+   "key": true,
+   "emoji": null,
+   "t": 22.677,
+   "e": 23.104
+  },
+  {
+   "w": "Last",
+   "key": false,
+   "emoji": null,
+   "t": 23.254,
+   "e": 23.478
+  },
+  {
+   "w": "minute",
+   "key": false,
+   "emoji": null,
+   "t": 23.478,
+   "e": 24.148
+  },
+  {
+   "w": "ka",
+   "key": false,
+   "emoji": null,
+   "t": 24.148,
+   "e": 24.372
+  },
+  {
+   "w": "pakka",
+   "key": true,
+   "emoji": null,
+   "t": 24.372,
+   "e": 24.819
+  },
+  {
+   "w": "dost.",
+   "key": false,
+   "emoji": null,
+   "t": 24.819,
+   "e": 25.043
+  }
+ ]
+}

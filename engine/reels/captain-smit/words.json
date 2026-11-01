@@ -1,0 +1,1930 @@
+{
+ "duration": 60.232,
+ "silences": [
+  [
+   2.07,
+   2.6
+  ],
+  [
+   3.88,
+   4.49
+  ],
+  [
+   6.39,
+   6.61
+  ],
+  [
+   9.72,
+   9.85
+  ],
+  [
+   11.04,
+   11.26
+  ],
+  [
+   13.34,
+   13.89
+  ],
+  [
+   15.09,
+   15.29
+  ],
+  [
+   18.02,
+   18.24
+  ],
+  [
+   19.52,
+   19.7
+  ],
+  [
+   21.14,
+   21.27
+  ],
+  [
+   21.31,
+   21.47
+  ],
+  [
+   23.84,
+   24.33
+  ],
+  [
+   27.81,
+   27.95
+  ],
+  [
+   28.02,
+   28.5
+  ],
+  [
+   30.52,
+   30.85
+  ],
+  [
+   32.15,
+   32.61
+  ],
+  [
+   34.96,
+   35.14
+  ],
+  [
+   37.0,
+   37.67
+  ],
+  [
+   40.7,
+   41.08
+  ],
+  [
+   43.23,
+   43.49
+  ],
+  [
+   44.26,
+   44.78
+  ],
+  [
+   46.67,
+   47.22
+  ],
+  [
+   48.55,
+   48.88
+  ],
+  [
+   50.89,
+   51.11
+  ],
+  [
+   52.74,
+   52.94
+  ],
+  [
+   52.98,
+   53.49
+  ],
+  [
+   55.45,
+   55.93
+  ],
+  [
+   56.57,
+   56.84
+  ],
+  [
+   57.93,
+   58.33
+  ],
+  [
+   59.45,
+   60.23
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "ground": "dark",
+   "firstWord": 0
+  },
+  {
+   "id": "door",
+   "ground": "dark",
+   "firstWord": 8
+  },
+  {
+   "id": "route",
+   "ground": "dark",
+   "firstWord": 41
+  },
+  {
+   "id": "dive",
+   "ground": "dark",
+   "firstWord": 74
+  },
+  {
+   "id": "captain",
+   "ground": "dark",
+   "firstWord": 87
+  },
+  {
+   "id": "landing",
+   "ground": "dark",
+   "firstWord": 115
+  },
+  {
+   "id": "after",
+   "ground": "dark",
+   "firstWord": 145
+  },
+  {
+   "id": "close",
+   "ground": "dark",
+   "firstWord": 167
+  }
+ ],
+ "blocks": [
+  {
+   "words": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "slot": "top",
+   "scene": 0
+  },
+  {
+   "words": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "slot": "top",
+   "scene": 0
+  },
+  {
+   "words": [
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 11
+  },
+  {
+   "words": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    17,
+    18,
+    19,
+    20
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    21,
+    22,
+    23
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 28
+  },
+  {
+   "words": [
+    31,
+    32,
+    33,
+    34
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 38
+  },
+  {
+   "words": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    46,
+    47,
+    48,
+    49
+   ],
+   "slot": "top",
+   "scene": 2,
+   "br": 48
+  },
+  {
+   "words": [
+    50,
+    51,
+    52,
+    53,
+    54
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    55,
+    56,
+    57,
+    58,
+    59
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    60,
+    61,
+    62,
+    63,
+    64
+   ],
+   "slot": "top",
+   "scene": 2,
+   "br": 63
+  },
+  {
+   "words": [
+    65,
+    66,
+    67,
+    68,
+    69
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    70,
+    71,
+    72,
+    73
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    74,
+    75,
+    76
+   ],
+   "slot": "top",
+   "scene": 3
+  },
+  {
+   "words": [
+    77,
+    78,
+    79,
+    80,
+    81,
+    82
+   ],
+   "slot": "top",
+   "scene": 3,
+   "br": 80
+  },
+  {
+   "words": [
+    83,
+    84,
+    85,
+    86
+   ],
+   "slot": "top",
+   "scene": 3
+  },
+  {
+   "words": [
+    87,
+    88,
+    89,
+    90,
+    91
+   ],
+   "slot": "top",
+   "scene": 4,
+   "br": 90
+  },
+  {
+   "words": [
+    92,
+    93
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    94,
+    95,
+    96,
+    97
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    98,
+    99,
+    100,
+    101,
+    102,
+    103
+   ],
+   "slot": "top",
+   "scene": 4,
+   "br": 102
+  },
+  {
+   "words": [
+    104,
+    105,
+    106,
+    107
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114
+   ],
+   "slot": "top",
+   "scene": 4,
+   "br": 111
+  },
+  {
+   "words": [
+    115,
+    116,
+    117,
+    118,
+    119
+   ],
+   "slot": "top",
+   "scene": 5,
+   "br": 118
+  },
+  {
+   "words": [
+    120,
+    121,
+    122,
+    123
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    124,
+    125,
+    126
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    127,
+    128,
+    129,
+    130
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    131,
+    132,
+    133,
+    134,
+    135
+   ],
+   "slot": "top",
+   "scene": 5,
+   "br": 134
+  },
+  {
+   "words": [
+    136,
+    137,
+    138
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    139,
+    140,
+    141,
+    142,
+    143,
+    144
+   ],
+   "slot": "top",
+   "scene": 5,
+   "br": 142
+  },
+  {
+   "words": [
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+   ],
+   "slot": "top",
+   "scene": 6,
+   "br": 148
+  },
+  {
+   "words": [
+    151,
+    152,
+    153,
+    154,
+    155
+   ],
+   "slot": "top",
+   "scene": 6
+  },
+  {
+   "words": [
+    156,
+    157,
+    158,
+    159
+   ],
+   "slot": "top",
+   "scene": 6
+  },
+  {
+   "words": [
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166
+   ],
+   "slot": "top",
+   "scene": 6,
+   "br": 163
+  },
+  {
+   "words": [
+    167,
+    168,
+    169,
+    170,
+    171
+   ],
+   "slot": "top",
+   "scene": 7
+  },
+  {
+   "words": [
+    172,
+    173,
+    174,
+    175
+   ],
+   "slot": "top",
+   "scene": 7
+  },
+  {
+   "words": [
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182
+   ],
+   "slot": "top",
+   "scene": 7,
+   "br": 179
+  },
+  {
+   "words": [
+    183,
+    184,
+    185,
+    186,
+    187
+   ],
+   "slot": "top",
+   "scene": 7
+  }
+ ],
+ "words": [
+  {
+   "w": "A",
+   "key": false,
+   "emoji": null,
+   "t": 0.01,
+   "e": 0.06
+  },
+  {
+   "w": "locked",
+   "key": false,
+   "emoji": null,
+   "t": 0.06,
+   "e": 0.3
+  },
+  {
+   "w": "cockpit",
+   "key": false,
+   "emoji": null,
+   "t": 0.46,
+   "e": 0.84
+  },
+  {
+   "w": "door",
+   "key": true,
+   "emoji": null,
+   "t": 0.84,
+   "e": 1.05
+  },
+  {
+   "w": "keeps",
+   "key": false,
+   "emoji": null,
+   "t": 1.16,
+   "e": 1.37
+  },
+  {
+   "w": "a",
+   "key": false,
+   "emoji": null,
+   "t": 1.38,
+   "e": 1.44
+  },
+  {
+   "w": "plane",
+   "key": false,
+   "emoji": null,
+   "t": 1.44,
+   "e": 1.73
+  },
+  {
+   "w": "safe.",
+   "key": true,
+   "emoji": null,
+   "t": 1.73,
+   "e": 2.05
+  },
+  {
+   "w": "Unless",
+   "key": false,
+   "emoji": null,
+   "t": 2.6,
+   "e": 2.901
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 2.901,
+   "e": 3.037
+  },
+  {
+   "w": "danger",
+   "key": false,
+   "emoji": null,
+   "t": 3.037,
+   "e": 3.303
+  },
+  {
+   "w": "is",
+   "key": false,
+   "emoji": null,
+   "t": 3.303,
+   "e": 3.348
+  },
+  {
+   "w": "inside.",
+   "key": true,
+   "emoji": null,
+   "t": 3.676,
+   "e": 3.88
+  },
+  {
+   "w": "Cockpit",
+   "key": false,
+   "emoji": null,
+   "t": 4.81,
+   "e": 5.1
+  },
+  {
+   "w": "doors",
+   "key": false,
+   "emoji": null,
+   "t": 5.14,
+   "e": 5.333
+  },
+  {
+   "w": "are",
+   "key": false,
+   "emoji": null,
+   "t": 5.333,
+   "e": 5.444
+  },
+  {
+   "w": "built",
+   "key": false,
+   "emoji": null,
+   "t": 5.444,
+   "e": 5.635
+  },
+  {
+   "w": "to",
+   "key": false,
+   "emoji": null,
+   "t": 5.635,
+   "e": 5.707
+  },
+  {
+   "w": "keep",
+   "key": false,
+   "emoji": null,
+   "t": 5.707,
+   "e": 5.858
+  },
+  {
+   "w": "attackers",
+   "key": false,
+   "emoji": null,
+   "t": 5.858,
+   "e": 6.199
+  },
+  {
+   "w": "out.",
+   "key": true,
+   "emoji": null,
+   "t": 6.199,
+   "e": 6.39
+  },
+  {
+   "w": "Under",
+   "key": false,
+   "emoji": null,
+   "t": 6.81,
+   "e": 7.1
+  },
+  {
+   "w": "American",
+   "key": true,
+   "emoji": null,
+   "t": 7.18,
+   "e": 7.63
+  },
+  {
+   "w": "rules,",
+   "key": false,
+   "emoji": null,
+   "t": 7.63,
+   "e": 8.06
+  },
+  {
+   "w": "a",
+   "key": false,
+   "emoji": null,
+   "t": 8.07,
+   "e": 8.07
+  },
+  {
+   "w": "door",
+   "key": false,
+   "emoji": null,
+   "t": 8.14,
+   "e": 8.38
+  },
+  {
+   "w": "must",
+   "key": false,
+   "emoji": null,
+   "t": 8.38,
+   "e": 8.63
+  },
+  {
+   "w": "hold",
+   "key": false,
+   "emoji": null,
+   "t": 8.63,
+   "e": 8.85
+  },
+  {
+   "w": "against",
+   "key": false,
+   "emoji": null,
+   "t": 9.33,
+   "e": 9.33
+  },
+  {
+   "w": "being",
+   "key": false,
+   "emoji": null,
+   "t": 9.4,
+   "e": 9.65
+  },
+  {
+   "w": "forced,",
+   "key": true,
+   "emoji": null,
+   "t": 9.65,
+   "e": 10.03
+  },
+  {
+   "w": "and",
+   "key": false,
+   "emoji": null,
+   "t": 10.03,
+   "e": 10.22
+  },
+  {
+   "w": "stop",
+   "key": false,
+   "emoji": null,
+   "t": 10.22,
+   "e": 10.47
+  },
+  {
+   "w": "handgun",
+   "key": false,
+   "emoji": null,
+   "t": 10.47,
+   "e": 10.66
+  },
+  {
+   "w": "bullets.",
+   "key": true,
+   "emoji": null,
+   "t": 11.29,
+   "e": 11.64
+  },
+  {
+   "w": "Its",
+   "key": false,
+   "emoji": null,
+   "t": 11.65,
+   "e": 11.88
+  },
+  {
+   "w": "lock",
+   "key": false,
+   "emoji": null,
+   "t": 11.88,
+   "e": 12.185
+  },
+  {
+   "w": "opens",
+   "key": false,
+   "emoji": null,
+   "t": 12.185,
+   "e": 12.475
+  },
+  {
+   "w": "only",
+   "key": false,
+   "emoji": null,
+   "t": 12.475,
+   "e": 12.706
+  },
+  {
+   "w": "from",
+   "key": false,
+   "emoji": null,
+   "t": 12.714,
+   "e": 12.952
+  },
+  {
+   "w": "inside.",
+   "key": true,
+   "emoji": null,
+   "t": 12.952,
+   "e": 13.34
+  },
+  {
+   "w": "On",
+   "key": false,
+   "emoji": null,
+   "t": 13.97,
+   "e": 14.08
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 14.08,
+   "e": 14.25
+  },
+  {
+   "w": "thirtieth",
+   "key": true,
+   "emoji": null,
+   "t": 14.25,
+   "e": 14.75
+  },
+  {
+   "w": "of",
+   "key": false,
+   "emoji": null,
+   "t": 14.75,
+   "e": 14.87
+  },
+  {
+   "w": "September,",
+   "key": false,
+   "emoji": null,
+   "t": 14.87,
+   "e": 15.55
+  },
+  {
+   "w": "flydubai",
+   "key": false,
+   "emoji": null,
+   "t": 15.55,
+   "e": 15.86
+  },
+  {
+   "w": "flight",
+   "key": false,
+   "emoji": null,
+   "t": 15.86,
+   "e": 16.07
+  },
+  {
+   "w": "ten",
+   "key": false,
+   "emoji": null,
+   "t": 16.56,
+   "e": 16.671
+  },
+  {
+   "w": "seventy-three",
+   "key": true,
+   "emoji": null,
+   "t": 16.671,
+   "e": 17.137
+  },
+  {
+   "w": "left",
+   "key": false,
+   "emoji": null,
+   "t": 17.137,
+   "e": 17.377
+  },
+  {
+   "w": "Dubai",
+   "key": true,
+   "emoji": null,
+   "t": 17.377,
+   "e": 17.665
+  },
+  {
+   "w": "for",
+   "key": false,
+   "emoji": null,
+   "t": 17.665,
+   "e": 17.78
+  },
+  {
+   "w": "Tel",
+   "key": false,
+   "emoji": null,
+   "t": 18.02,
+   "e": 18.02
+  },
+  {
+   "w": "Aviv.",
+   "key": false,
+   "emoji": null,
+   "t": 18.32,
+   "e": 18.57
+  },
+  {
+   "w": "More",
+   "key": false,
+   "emoji": null,
+   "t": 18.61,
+   "e": 18.81
+  },
+  {
+   "w": "than",
+   "key": false,
+   "emoji": null,
+   "t": 18.81,
+   "e": 18.9
+  },
+  {
+   "w": "two",
+   "key": false,
+   "emoji": null,
+   "t": 19.06,
+   "e": 19.18
+  },
+  {
+   "w": "hours",
+   "key": true,
+   "emoji": null,
+   "t": 19.18,
+   "e": 19.45
+  },
+  {
+   "w": "in,",
+   "key": false,
+   "emoji": null,
+   "t": 19.45,
+   "e": 19.64
+  },
+  {
+   "w": "over",
+   "key": false,
+   "emoji": null,
+   "t": 19.65,
+   "e": 19.85
+  },
+  {
+   "w": "Saudi",
+   "key": false,
+   "emoji": null,
+   "t": 19.86,
+   "e": 20.13
+  },
+  {
+   "w": "Arabia",
+   "key": false,
+   "emoji": null,
+   "t": 20.13,
+   "e": 20.45
+  },
+  {
+   "w": "near",
+   "key": false,
+   "emoji": null,
+   "t": 20.45,
+   "e": 20.65
+  },
+  {
+   "w": "Jordan,",
+   "key": true,
+   "emoji": null,
+   "t": 20.65,
+   "e": 21.08
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 21.2,
+   "e": 21.24
+  },
+  {
+   "w": "co-pilot",
+   "key": false,
+   "emoji": null,
+   "t": 21.24,
+   "e": 21.64
+  },
+  {
+   "w": "attacked",
+   "key": true,
+   "emoji": null,
+   "t": 21.65,
+   "e": 22.08
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 22.08,
+   "e": 22.21
+  },
+  {
+   "w": "captain",
+   "key": false,
+   "emoji": null,
+   "t": 22.21,
+   "e": 22.46
+  },
+  {
+   "w": "inside",
+   "key": false,
+   "emoji": null,
+   "t": 22.727,
+   "e": 22.922
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 23.029,
+   "e": 23.116
+  },
+  {
+   "w": "locked",
+   "key": false,
+   "emoji": null,
+   "t": 23.176,
+   "e": 23.391
+  },
+  {
+   "w": "cockpit.",
+   "key": true,
+   "emoji": null,
+   "t": 23.391,
+   "e": 23.84
+  },
+  {
+   "w": "The",
+   "key": false,
+   "emoji": null,
+   "t": 24.45,
+   "e": 24.61
+  },
+  {
+   "w": "jet",
+   "key": false,
+   "emoji": null,
+   "t": 24.61,
+   "e": 24.74
+  },
+  {
+   "w": "dived,",
+   "key": true,
+   "emoji": null,
+   "t": 24.78,
+   "e": 25.18
+  },
+  {
+   "w": "falling",
+   "key": false,
+   "emoji": null,
+   "t": 25.18,
+   "e": 25.49
+  },
+  {
+   "w": "more",
+   "key": false,
+   "emoji": null,
+   "t": 25.6,
+   "e": 25.81
+  },
+  {
+   "w": "than",
+   "key": false,
+   "emoji": null,
+   "t": 25.82,
+   "e": 26.05
+  },
+  {
+   "w": "fifteen",
+   "key": false,
+   "emoji": null,
+   "t": 26.05,
+   "e": 26.512
+  },
+  {
+   "w": "thousand",
+   "key": true,
+   "emoji": null,
+   "t": 26.512,
+   "e": 26.998
+  },
+  {
+   "w": "feet",
+   "key": false,
+   "emoji": null,
+   "t": 26.998,
+   "e": 27.185
+  },
+  {
+   "w": "in",
+   "key": false,
+   "emoji": null,
+   "t": 27.185,
+   "e": 27.274
+  },
+  {
+   "w": "under",
+   "key": false,
+   "emoji": null,
+   "t": 27.274,
+   "e": 27.509
+  },
+  {
+   "w": "two",
+   "key": false,
+   "emoji": null,
+   "t": 27.509,
+   "e": 27.647
+  },
+  {
+   "w": "minutes.",
+   "key": true,
+   "emoji": null,
+   "t": 27.647,
+   "e": 28.02
+  },
+  {
+   "w": "The",
+   "key": false,
+   "emoji": null,
+   "t": 28.57,
+   "e": 28.77
+  },
+  {
+   "w": "captain",
+   "key": false,
+   "emoji": null,
+   "t": 28.77,
+   "e": 29.28
+  },
+  {
+   "w": "was",
+   "key": false,
+   "emoji": null,
+   "t": 29.28,
+   "e": 29.433
+  },
+  {
+   "w": "Smit",
+   "key": false,
+   "emoji": null,
+   "t": 29.433,
+   "e": 29.62
+  },
+  {
+   "w": "Machchhar,",
+   "key": true,
+   "emoji": null,
+   "t": 29.62,
+   "e": 29.86
+  },
+  {
+   "w": "from",
+   "key": false,
+   "emoji": null,
+   "t": 29.86,
+   "e": 30.047
+  },
+  {
+   "w": "Mumbai.",
+   "key": true,
+   "emoji": null,
+   "t": 30.047,
+   "e": 30.52
+  },
+  {
+   "w": "He",
+   "key": false,
+   "emoji": null,
+   "t": 31.086,
+   "e": 31.169
+  },
+  {
+   "w": "was",
+   "key": false,
+   "emoji": null,
+   "t": 31.169,
+   "e": 31.297
+  },
+  {
+   "w": "seriously",
+   "key": false,
+   "emoji": null,
+   "t": 31.305,
+   "e": 31.727
+  },
+  {
+   "w": "injured.",
+   "key": true,
+   "emoji": null,
+   "t": 31.727,
+   "e": 32.15
+  },
+  {
+   "w": "But",
+   "key": false,
+   "emoji": null,
+   "t": 32.61,
+   "e": 32.771
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 32.771,
+   "e": 32.932
+  },
+  {
+   "w": "cockpit",
+   "key": false,
+   "emoji": null,
+   "t": 32.932,
+   "e": 33.174
+  },
+  {
+   "w": "door",
+   "key": false,
+   "emoji": null,
+   "t": 33.33,
+   "e": 33.35
+  },
+  {
+   "w": "came",
+   "key": false,
+   "emoji": null,
+   "t": 33.72,
+   "e": 33.84
+  },
+  {
+   "w": "open,",
+   "key": true,
+   "emoji": null,
+   "t": 33.84,
+   "e": 34.09
+  },
+  {
+   "w": "and",
+   "key": false,
+   "emoji": null,
+   "t": 34.09,
+   "e": 34.27
+  },
+  {
+   "w": "help",
+   "key": false,
+   "emoji": null,
+   "t": 34.27,
+   "e": 34.52
+  },
+  {
+   "w": "got",
+   "key": false,
+   "emoji": null,
+   "t": 34.52,
+   "e": 34.69
+  },
+  {
+   "w": "in.",
+   "key": true,
+   "emoji": null,
+   "t": 34.7,
+   "e": 34.98
+  },
+  {
+   "w": "Crew",
+   "key": false,
+   "emoji": null,
+   "t": 35.11,
+   "e": 35.36
+  },
+  {
+   "w": "and",
+   "key": false,
+   "emoji": null,
+   "t": 35.36,
+   "e": 35.48
+  },
+  {
+   "w": "passengers",
+   "key": false,
+   "emoji": null,
+   "t": 35.56,
+   "e": 36.023
+  },
+  {
+   "w": "held",
+   "key": false,
+   "emoji": null,
+   "t": 36.094,
+   "e": 36.228
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 36.234,
+   "e": 36.349
+  },
+  {
+   "w": "attacker",
+   "key": false,
+   "emoji": null,
+   "t": 36.349,
+   "e": 36.56
+  },
+  {
+   "w": "down.",
+   "key": true,
+   "emoji": null,
+   "t": 36.56,
+   "e": 37.0
+  },
+  {
+   "w": "Two",
+   "key": false,
+   "emoji": null,
+   "t": 37.69,
+   "e": 37.86
+  },
+  {
+   "w": "flydubai",
+   "key": false,
+   "emoji": null,
+   "t": 37.86,
+   "e": 38.27
+  },
+  {
+   "w": "pilots",
+   "key": true,
+   "emoji": null,
+   "t": 38.36,
+   "e": 38.7
+  },
+  {
+   "w": "on",
+   "key": false,
+   "emoji": null,
+   "t": 38.7,
+   "e": 38.73
+  },
+  {
+   "w": "board",
+   "key": false,
+   "emoji": null,
+   "t": 38.84,
+   "e": 39.12
+  },
+  {
+   "w": "for",
+   "key": false,
+   "emoji": null,
+   "t": 39.12,
+   "e": 39.3
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 39.3,
+   "e": 39.48
+  },
+  {
+   "w": "return",
+   "key": true,
+   "emoji": null,
+   "t": 39.48,
+   "e": 39.654
+  },
+  {
+   "w": "flight",
+   "key": false,
+   "emoji": null,
+   "t": 39.969,
+   "e": 39.969
+  },
+  {
+   "w": "took",
+   "key": false,
+   "emoji": null,
+   "t": 40.023,
+   "e": 40.13
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 40.13,
+   "e": 40.251
+  },
+  {
+   "w": "controls.",
+   "key": true,
+   "emoji": null,
+   "t": 40.251,
+   "e": 40.7
+  },
+  {
+   "w": "About",
+   "key": false,
+   "emoji": null,
+   "t": 41.33,
+   "e": 41.62
+  },
+  {
+   "w": "an",
+   "key": false,
+   "emoji": null,
+   "t": 41.66,
+   "e": 41.71
+  },
+  {
+   "w": "hour",
+   "key": true,
+   "emoji": null,
+   "t": 41.78,
+   "e": 41.91
+  },
+  {
+   "w": "later,",
+   "key": false,
+   "emoji": null,
+   "t": 42.0,
+   "e": 42.37
+  },
+  {
+   "w": "they",
+   "key": false,
+   "emoji": null,
+   "t": 42.48,
+   "e": 42.68
+  },
+  {
+   "w": "landed",
+   "key": false,
+   "emoji": null,
+   "t": 42.68,
+   "e": 43.05
+  },
+  {
+   "w": "safely",
+   "key": false,
+   "emoji": null,
+   "t": 43.05,
+   "e": 43.158
+  },
+  {
+   "w": "at",
+   "key": false,
+   "emoji": null,
+   "t": 43.34,
+   "e": 43.346
+  },
+  {
+   "w": "Tabuk,",
+   "key": true,
+   "emoji": null,
+   "t": 43.405,
+   "e": 43.586
+  },
+  {
+   "w": "in",
+   "key": false,
+   "emoji": null,
+   "t": 43.633,
+   "e": 43.656
+  },
+  {
+   "w": "Saudi",
+   "key": false,
+   "emoji": null,
+   "t": 43.656,
+   "e": 43.849
+  },
+  {
+   "w": "Arabia.",
+   "key": false,
+   "emoji": null,
+   "t": 43.849,
+   "e": 44.26
+  },
+  {
+   "w": "flydubai",
+   "key": false,
+   "emoji": null,
+   "t": 44.93,
+   "e": 45.44
+  },
+  {
+   "w": "said",
+   "key": false,
+   "emoji": null,
+   "t": 45.44,
+   "e": 45.621
+  },
+  {
+   "w": "every",
+   "key": false,
+   "emoji": null,
+   "t": 45.621,
+   "e": 45.798
+  },
+  {
+   "w": "passenger",
+   "key": false,
+   "emoji": null,
+   "t": 45.87,
+   "e": 46.218
+  },
+  {
+   "w": "was",
+   "key": false,
+   "emoji": null,
+   "t": 46.218,
+   "e": 46.336
+  },
+  {
+   "w": "safe.",
+   "key": true,
+   "emoji": null,
+   "t": 46.342,
+   "e": 46.67
+  },
+  {
+   "w": "The",
+   "key": false,
+   "emoji": null,
+   "t": 47.31,
+   "e": 47.445
+  },
+  {
+   "w": "captain",
+   "key": false,
+   "emoji": null,
+   "t": 47.445,
+   "e": 47.782
+  },
+  {
+   "w": "was",
+   "key": false,
+   "emoji": null,
+   "t": 47.782,
+   "e": 47.92
+  },
+  {
+   "w": "treated",
+   "key": false,
+   "emoji": null,
+   "t": 47.92,
+   "e": 48.213
+  },
+  {
+   "w": "in",
+   "key": false,
+   "emoji": null,
+   "t": 48.308,
+   "e": 48.351
+  },
+  {
+   "w": "Tabuk,",
+   "key": true,
+   "emoji": null,
+   "t": 48.351,
+   "e": 48.55
+  },
+  {
+   "w": "and",
+   "key": false,
+   "emoji": null,
+   "t": 48.88,
+   "e": 49.01
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 49.01,
+   "e": 49.15
+  },
+  {
+   "w": "Indian",
+   "key": false,
+   "emoji": null,
+   "t": 49.15,
+   "e": 49.367
+  },
+  {
+   "w": "Embassy",
+   "key": true,
+   "emoji": null,
+   "t": 49.796,
+   "e": 49.796
+  },
+  {
+   "w": "said",
+   "key": false,
+   "emoji": null,
+   "t": 49.861,
+   "e": 49.976
+  },
+  {
+   "w": "he",
+   "key": false,
+   "emoji": null,
+   "t": 49.976,
+   "e": 50.066
+  },
+  {
+   "w": "was",
+   "key": false,
+   "emoji": null,
+   "t": 50.066,
+   "e": 50.196
+  },
+  {
+   "w": "recovering",
+   "key": false,
+   "emoji": null,
+   "t": 50.196,
+   "e": 50.645
+  },
+  {
+   "w": "well.",
+   "key": true,
+   "emoji": null,
+   "t": 50.645,
+   "e": 50.89
+  },
+  {
+   "w": "India's",
+   "key": false,
+   "emoji": null,
+   "t": 51.33,
+   "e": 51.7
+  },
+  {
+   "w": "Prime",
+   "key": false,
+   "emoji": null,
+   "t": 51.78,
+   "e": 51.952
+  },
+  {
+   "w": "Minister",
+   "key": false,
+   "emoji": null,
+   "t": 51.952,
+   "e": 52.222
+  },
+  {
+   "w": "called",
+   "key": false,
+   "emoji": null,
+   "t": 52.305,
+   "e": 52.56
+  },
+  {
+   "w": "him",
+   "key": false,
+   "emoji": null,
+   "t": 52.56,
+   "e": 52.688
+  },
+  {
+   "w": "a",
+   "key": false,
+   "emoji": null,
+   "t": 52.688,
+   "e": 52.702
+  },
+  {
+   "w": "hero.",
+   "key": true,
+   "emoji": null,
+   "t": 52.71,
+   "e": 52.98
+  },
+  {
+   "w": "A",
+   "key": false,
+   "emoji": null,
+   "t": 53.49,
+   "e": 53.55
+  },
+  {
+   "w": "locked",
+   "key": false,
+   "emoji": null,
+   "t": 53.55,
+   "e": 53.97
+  },
+  {
+   "w": "door",
+   "key": false,
+   "emoji": null,
+   "t": 53.97,
+   "e": 54.25
+  },
+  {
+   "w": "is",
+   "key": false,
+   "emoji": null,
+   "t": 54.25,
+   "e": 54.345
+  },
+  {
+   "w": "meant",
+   "key": true,
+   "emoji": null,
+   "t": 54.345,
+   "e": 54.575
+  },
+  {
+   "w": "to",
+   "key": false,
+   "emoji": null,
+   "t": 54.582,
+   "e": 54.677
+  },
+  {
+   "w": "keep",
+   "key": false,
+   "emoji": null,
+   "t": 54.677,
+   "e": 54.86
+  },
+  {
+   "w": "danger",
+   "key": false,
+   "emoji": null,
+   "t": 54.86,
+   "e": 55.009
+  },
+  {
+   "w": "out.",
+   "key": true,
+   "emoji": null,
+   "t": 55.152,
+   "e": 55.43
+  },
+  {
+   "w": "On",
+   "key": false,
+   "emoji": null,
+   "t": 55.868,
+   "e": 55.959
+  },
+  {
+   "w": "this",
+   "key": false,
+   "emoji": null,
+   "t": 55.959,
+   "e": 56.087
+  },
+  {
+   "w": "flight,",
+   "key": false,
+   "emoji": null,
+   "t": 56.208,
+   "e": 56.57
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 56.927,
+   "e": 57.021
+  },
+  {
+   "w": "door",
+   "key": false,
+   "emoji": null,
+   "t": 57.116,
+   "e": 57.33
+  },
+  {
+   "w": "that",
+   "key": false,
+   "emoji": null,
+   "t": 57.33,
+   "e": 57.553
+  },
+  {
+   "w": "opened",
+   "key": true,
+   "emoji": null,
+   "t": 57.553,
+   "e": 57.741
+  },
+  {
+   "w": "is",
+   "key": false,
+   "emoji": null,
+   "t": 57.741,
+   "e": 57.93
+  },
+  {
+   "w": "what",
+   "key": false,
+   "emoji": null,
+   "t": 58.51,
+   "e": 58.51
+  },
+  {
+   "w": "saved",
+   "key": false,
+   "emoji": null,
+   "t": 58.62,
+   "e": 58.85
+  },
+  {
+   "w": "the",
+   "key": false,
+   "emoji": null,
+   "t": 58.85,
+   "e": 59.04
+  },
+  {
+   "w": "plane.",
+   "key": true,
+   "emoji": null,
+   "t": 59.05,
+   "e": 59.46
+  }
+ ]
+}

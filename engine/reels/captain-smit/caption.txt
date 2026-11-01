@@ -1,0 +1,49 @@
+# captain-smit: world 1 = the jet and its cockpit door (3D); world 2 = the flight display, route map over altitude trace (2D).
+== hook | ground: dark
+A locked cockpit *door*
+keeps a plane *safe.*
+== door | ground: dark
+Unless the danger / is *inside.*
+Cockpit doors are built
+to keep attackers *out.*
+Under *American* rules,
+a door must hold / against being *forced,*
+and stop handgun *bullets.*
+Its lock opens / only from *inside.*
+== route | ground: dark
+On the *thirtieth* of September,
+flydubai flight / ten *seventy-three*
+left *Dubai* for Tel Aviv.
+More than two *hours* in,
+over Saudi Arabia / near *Jordan,*
+the co-pilot *attacked* the captain
+inside the locked *cockpit.*
+== dive | ground: dark
+The jet *dived,*
+falling more than / fifteen *thousand* feet
+in under two *minutes.*
+== captain | ground: dark
+The captain was / Smit *Machchhar,*
+from *Mumbai.*
+He was seriously *injured.*
+But the cockpit door / came *open,*
+and help got *in.*
+Crew and passengers / held the attacker *down.*
+== landing | ground: dark
+Two flydubai *pilots* / on board
+for the *return* flight
+took the *controls.*
+About an *hour* later,
+they landed safely / at *Tabuk,*
+in Saudi Arabia.
+flydubai said every / passenger was *safe.*
+== after | ground: dark
+The captain was / treated in *Tabuk,*
+and the Indian *Embassy* said
+he was recovering *well.*
+India's Prime Minister / called him a *hero.*
+== close | ground: dark
+A locked door is *meant*
+to keep danger *out.*
+On this flight, / the door that *opened*
+is what saved the *plane.*

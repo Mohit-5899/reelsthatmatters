@@ -1,0 +1,44 @@
+# Why ice floats: glass + lake in one world, molecules in a second world, back to the glass for the payoff.
+== hook | ground: dark
+Cold water *sinks.*
+So why does *frozen* water / float on top?
+== lake | ground: dark
+Watch a *lake* in autumn.
+The surface water cools, / gets heavier, and *sinks.*
+That goes on until / the whole lake is
+near *four* degrees.
+Then the rule *flips.*
+Below four degrees,
+water gets *lighter* as it cools.
+The coldest water stays on top,
+and that is where / the *ice* forms.
+== liquid | ground: dark
+To see why, *zoom* in.
+In liquid water,
+the molecules *tumble* / past each other.
+The weak bonds between them
+break and re-form in a fraction
+of a *trillionth* of a second,
+so nothing holds *still.*
+== cage | ground: dark
+Freeze them, and every / *oxygen* locks onto
+four neighbours.
+The bonds join into / *rings* of six,
+stacked layer on layer.
+== roomy | ground: dark
+That *cage* is roomy.
+The molecules sit *farther* apart
+than they did in the liquid,
+so the same water takes up
+about nine *percent* more space.
+== payoff | ground: dark
+Same water, more *room.*
+Ice ends up *lighter* than
+the water around it, so it rises.
+That floating *lid* insulates
+the water below, so ponds
+usually don't freeze *solid.*
+Ice floats because freezing
+opens water into a *cage*
+that is lighter than the water
+it came from.

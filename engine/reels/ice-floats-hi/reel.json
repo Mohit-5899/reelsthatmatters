@@ -1,0 +1,55 @@
+{
+  "voice": {
+    "provider": "sarvam",
+    "id": "shubh",
+    "model": "bulbul:v3",
+    "language": "hi-IN",
+    "pace": 1.0,
+    "temperature": 0.6,
+    "pause": 0.45,
+    "gap": 0.2,
+    "timing": "sentence"
+  },
+  "theme": {
+    "motion": "measured",
+    "handover": "continuous",
+    "morph": {
+      "frames": 24,
+      "joins": [
+        "liquid",
+        "payoff"
+      ]
+    }
+  },
+  "cues": {
+    "cold": "thanda",
+    "sinks": "doob",
+    "top": "upar",
+    "watch": "dekho",
+    "cools": "thanda",
+    "heavier": "bhaari",
+    "four": "chaar",
+    "flips": "palat",
+    "lighter": [
+      "halki",
+      "halka"
+    ],
+    "coldest": "sabse",
+    "where": "wahin",
+    "tumble": "ludhakte",
+    "break": "toot",
+    "still": "ruka",
+    "six": "chheh",
+    "farther": "door",
+    "same": "wahi",
+    "takes": "leta",
+    "nine": "nau",
+    "space": "jagah",
+    "rises": "upar",
+    "lid": "dhakkan",
+    "below": "neeche",
+    "ponds": "talaab",
+    "solid": "jamte",
+    "zoom": "kyun"
+  }
+}

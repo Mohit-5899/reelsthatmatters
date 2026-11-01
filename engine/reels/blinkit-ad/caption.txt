@@ -1,0 +1,26 @@
+# Blinkit spec ad, Hinglish. 2D, one bright world. No delivery-time claim anywhere.
+== hook | ground: dark
+Raat ke *gyarah* baje.
+Kal subah *presentation* hai,
+aur printer ne / *dhokha* de diya.
+== problems | ground: dark
+*Doodh* khatam.
+Dost aa gaye, / aur *chips* nahi.
+Baby ke *diapers?*
+Woh bhi khatam.
+Upar se mummy ka *message,*
+*dhaniya* le aana!
+# open also holds the product drop: "Tension mat lo. Blinkit kholo." alone is 1.8 s, and motion.py fails a scene under 2 s
+== open | ground: light
+Tension mat lo.
+*Blinkit* kholo.
+*Printout,* doodh, chips,
+diapers, dawaiyan,
+pet food, / phone *charger* bhi.
+*Tees* hazaar se zyada products.
+== door | ground: light
+Ek *app,* aur sab kuch
+seedha aapke *darwaze* tak.
+== end | ground: light
+*Blinkit.*
+Last minute ka *pakka* dost.

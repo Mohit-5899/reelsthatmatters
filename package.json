@@ -1,0 +1,38 @@
+{
+  "name": "reelsthatmatters",
+  "version": "0.1.0",
+  "description": "reelsthatmatters: researched, narrated explainer reels animated in code (2D canvas or real 3D), with checks that pass or fail every render.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "bin": {
+    "reelsthatmatters-mcp": "mcp/server.mjs"
+  },
+  "scripts": {
+    "render": "cd engine && node render.mjs",
+    "draft": "cd engine && node draft.mjs",
+    "typecheck": "tsc --noEmit -p engine",
+    "mcp": "node mcp/server.mjs",
+    "test": "node mcp/test.mjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@remotion/bundler": "4.0.522",
+    "@remotion/cli": "4.0.522",
+    "@remotion/google-fonts": "4.0.522",
+    "@remotion/layout-utils": "4.0.522",
+    "@remotion/renderer": "4.0.522",
+    "@remotion/three": "4.0.522",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.522",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/three": "0.187.0",
+    "typescript": "5.9.3"
+  }
+}

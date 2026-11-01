@@ -1,0 +1,136 @@
+{
+ "sentences": [
+  {
+   "text": "Thanda paani neeche doob jaata hai.",
+   "t": 0.0,
+   "e": 1.513,
+   "syllables": 10
+  },
+  {
+   "text": "Toh phir frozen paani float karke upar kyun rehta hai?",
+   "t": 1.713,
+   "e": 3.962,
+   "syllables": 15
+  },
+  {
+   "text": "Dekho ek lake ko, autumn mein.",
+   "t": 4.412,
+   "e": 7.095,
+   "syllables": 9
+  },
+  {
+   "text": "Upar ka surface water thanda hota hai, bhaari hota hai, aur doob jaata hai.",
+   "t": 7.295,
+   "e": 10.781,
+   "syllables": 23
+  },
+  {
+   "text": "Ye tab tak chalta hai, jab tak poori lake lagbhag chaar degree pe na aa jaaye.",
+   "t": 10.981,
+   "e": 14.63,
+   "syllables": 21
+  },
+  {
+   "text": "Phir rule palat jaata hai.",
+   "t": 15.08,
+   "e": 16.178,
+   "syllables": 8
+  },
+  {
+   "text": "Chaar degree se neeche, paani thanda hone pe halka hota jaata hai.",
+   "t": 16.378,
+   "e": 19.685,
+   "syllables": 20
+  },
+  {
+   "text": "Sabse thanda paani upar rehta hai, aur wahin ice banti hai.",
+   "t": 19.885,
+   "e": 22.753,
+   "syllables": 19
+  },
+  {
+   "text": "Kyun?",
+   "t": 23.203,
+   "e": 23.437,
+   "syllables": 1
+  },
+  {
+   "text": "Ye dekhne ke liye zoom in karo.",
+   "t": 23.637,
+   "e": 24.897,
+   "syllables": 9
+  },
+  {
+   "text": "Liquid paani mein molecules ek doosre ke paas se ludhakte hue nikalte hain.",
+   "t": 25.097,
+   "e": 28.543,
+   "syllables": 23
+  },
+  {
+   "text": "Unke beech ke weak bonds toot jaate hain aur phir se ban jaate hain, ek second ke trillionth hisse se bhi kam mein.",
+   "t": 28.743,
+   "e": 34.351,
+   "syllables": 29
+  },
+  {
+   "text": "Isliye kuch bhi ek jagah ruka nahi rehta.",
+   "t": 34.551,
+   "e": 36.165,
+   "syllables": 13
+  },
+  {
+   "text": "Inhe freeze karo, aur har oxygen apne chaar padosiyon se jud jaata hai.",
+   "t": 36.615,
+   "e": 40.259,
+   "syllables": 22
+  },
+  {
+   "text": "Ye bonds milkar rings banate hain, har ring mein chheh, aur ye layer pe layer jam jaate hain.",
+   "t": 40.459,
+   "e": 45.992,
+   "syllables": 22
+  },
+  {
+   "text": "Ye cage khula hua hai.",
+   "t": 46.442,
+   "e": 47.648,
+   "syllables": 7
+  },
+  {
+   "text": "Molecules ab zyada door baithte hain, liquid se bhi zyada door.",
+   "t": 47.848,
+   "e": 51.719,
+   "syllables": 18
+  },
+  {
+   "text": "Toh wahi paani ab leta hai, lagbhag nau percent zyada jagah.",
+   "t": 51.919,
+   "e": 54.724,
+   "syllables": 18
+  },
+  {
+   "text": "Wahi paani, zyada jagah.",
+   "t": 55.174,
+   "e": 56.915,
+   "syllables": 8
+  },
+  {
+   "text": "Isliye ice apne aas paas ke paani se halki ho jaati hai, aur upar aa jaati hai.",
+   "t": 57.115,
+   "e": 60.98,
+   "syllables": 25
+  },
+  {
+   "text": "Ye tairta hua dhakkan neeche ke paani ko insulate karta hai, isliye talaab aksar poore nahi jamte.",
+   "t": 61.18,
+   "e": 65.706,
+   "syllables": 31
+  },
+  {
+   "text": "Ice isliye tairti hai, kyunki jamte waqt paani khulkar ek cage ban jaata hai, jo usi paani se halka hai jisse wo bana.",
+   "t": 66.156,
+   "e": 72.276,
+   "syllables": 37
+  }
+ ]
+}

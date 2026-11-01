@@ -1,0 +1,54 @@
+# Why ice floats, in Hinglish: the scenes of ice-floats, cued through reel.json "cues".
+== hook | ground: dark
+Thanda paani neeche / *doob* jaata hai.
+Toh phir *frozen* paani
+float karke upar kyun rehta hai?
+== lake | ground: dark
+Dekho ek *lake* ko, autumn mein.
+Upar ka surface water / thanda hota hai,
+*bhaari* hota hai, / aur doob jaata hai.
+Ye tab tak chalta hai,
+jab tak poori lake lagbhag
+*chaar* degree pe na aa jaaye.
+Phir rule *palat* jaata hai.
+Chaar degree se neeche,
+paani thanda hone pe / *halka* hota jaata hai.
+Sabse thanda paani / upar rehta hai,
+aur wahin *ice* banti hai.
+== liquid | ground: dark
+Kyun? Ye dekhne ke liye / *zoom* in karo.
+Liquid paani mein molecules
+ek doosre ke paas se
+*ludhakte* hue nikalte hain.
+Unke beech ke weak bonds
+toot jaate hain
+aur phir se ban jaate hain,
+ek second ke *trillionth*
+hisse se bhi kam mein.
+Isliye kuch bhi / ek jagah *ruka* nahi rehta.
+== cage | ground: dark
+Inhe freeze karo, aur har / *oxygen* apne chaar
+padosiyon se jud jaata hai.
+Ye bonds milkar / *rings* banate hain,
+har ring mein chheh,
+aur ye layer pe layer / jam jaate hain.
+== roomy | ground: dark
+Ye *cage* khula hua hai.
+Molecules ab zyada *door* baithte hain,
+liquid se bhi zyada door.
+Toh wahi paani ab leta hai,
+lagbhag nau *percent* / zyada jagah.
+== payoff | ground: dark
+Wahi paani, zyada *jagah.*
+Isliye ice apne aas paas ke
+paani se *halki* ho jaati hai,
+aur upar aa jaati hai.
+Ye tairta hua *dhakkan*
+neeche ke paani ko insulate karta hai,
+isliye talaab aksar
+poore nahi *jamte.*
+Ice isliye tairti hai,
+kyunki jamte waqt paani
+khulkar ek *cage* ban jaata hai,
+jo usi paani se halka hai
+jisse wo bana.

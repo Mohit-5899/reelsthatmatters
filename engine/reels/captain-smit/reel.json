@@ -1,0 +1,24 @@
+{
+  "voice": {
+    "provider": "sarvam",
+    "id": "shubh",
+    "model": "bulbul:v3",
+    "language": "en-IN",
+    "pace": 1.0,
+    "temperature": 0.6,
+    "pause": 0.45
+  },
+  "theme": {
+    "motion": "measured",
+    "handover": "continuous",
+    "morph": {
+      "frames": 44,
+      "joins": [
+        "route",
+        "captain",
+        "landing",
+        "close"
+      ]
+    }
+  }
+}

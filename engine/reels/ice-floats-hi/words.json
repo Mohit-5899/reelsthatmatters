@@ -1,0 +1,2513 @@
+{
+ "duration": 72.976,
+ "silences": [
+  [
+   1.51,
+   1.71
+  ],
+  [
+   3.96,
+   4.41
+  ],
+  [
+   4.86,
+   5.18
+  ],
+  [
+   5.79,
+   5.91
+  ],
+  [
+   6.26,
+   6.48
+  ],
+  [
+   7.1,
+   7.29
+  ],
+  [
+   10.77,
+   10.98
+  ],
+  [
+   14.63,
+   15.08
+  ],
+  [
+   16.18,
+   16.38
+  ],
+  [
+   17.45,
+   17.83
+  ],
+  [
+   19.68,
+   19.88
+  ],
+  [
+   21.39,
+   21.78
+  ],
+  [
+   22.76,
+   23.2
+  ],
+  [
+   23.43,
+   23.64
+  ],
+  [
+   24.89,
+   25.09
+  ],
+  [
+   28.55,
+   28.74
+  ],
+  [
+   31.82,
+   32.29
+  ],
+  [
+   34.35,
+   34.55
+  ],
+  [
+   36.16,
+   36.61
+  ],
+  [
+   40.26,
+   40.46
+  ],
+  [
+   42.36,
+   42.73
+  ],
+  [
+   43.58,
+   44.06
+  ],
+  [
+   45.99,
+   46.44
+  ],
+  [
+   47.64,
+   47.84
+  ],
+  [
+   50.1,
+   50.54
+  ],
+  [
+   51.71,
+   51.91
+  ],
+  [
+   54.72,
+   55.17
+  ],
+  [
+   55.85,
+   56.11
+  ],
+  [
+   56.92,
+   57.11
+  ],
+  [
+   57.83,
+   57.99
+  ],
+  [
+   60.98,
+   61.18
+  ],
+  [
+   63.78,
+   64.06
+  ],
+  [
+   65.71,
+   66.15
+  ],
+  [
+   69.83,
+   70.08
+  ],
+  [
+   72.28,
+   72.97
+  ]
+ ],
+ "scenes": [
+  {
+   "id": "hook",
+   "ground": "dark",
+   "firstWord": 0
+  },
+  {
+   "id": "lake",
+   "ground": "dark",
+   "firstWord": 16
+  },
+  {
+   "id": "liquid",
+   "ground": "dark",
+   "firstWord": 80
+  },
+  {
+   "id": "cage",
+   "ground": "dark",
+   "firstWord": 132
+  },
+  {
+   "id": "roomy",
+   "ground": "dark",
+   "firstWord": 163
+  },
+  {
+   "id": "payoff",
+   "ground": "dark",
+   "firstWord": 190
+  }
+ ],
+ "blocks": [
+  {
+   "words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "slot": "top",
+   "scene": 0,
+   "br": 3
+  },
+  {
+   "words": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "slot": "top",
+   "scene": 0
+  },
+  {
+   "words": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "slot": "top",
+   "scene": 0
+  },
+  {
+   "words": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 26
+  },
+  {
+   "words": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 32
+  },
+  {
+   "words": [
+    36,
+    37,
+    38,
+    39,
+    40
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    41,
+    42,
+    43,
+    44,
+    45
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    52,
+    53,
+    54,
+    55,
+    56
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    57,
+    58,
+    59,
+    60
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 65
+  },
+  {
+   "words": [
+    69,
+    70,
+    71,
+    72,
+    73,
+    74
+   ],
+   "slot": "top",
+   "scene": 1,
+   "br": 72
+  },
+  {
+   "words": [
+    75,
+    76,
+    77,
+    78,
+    79
+   ],
+   "slot": "top",
+   "scene": 1
+  },
+  {
+   "words": [
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+   ],
+   "slot": "top",
+   "scene": 2,
+   "br": 85
+  },
+  {
+   "words": [
+    88,
+    89,
+    90,
+    91
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    92,
+    93,
+    94,
+    95,
+    96
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    97,
+    98,
+    99,
+    100
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    101,
+    102,
+    103,
+    104,
+    105
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    106,
+    107,
+    108
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    109,
+    110,
+    111,
+    112,
+    113,
+    114
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    115,
+    116,
+    117,
+    118
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    119,
+    120,
+    121,
+    122,
+    123
+   ],
+   "slot": "top",
+   "scene": 2
+  },
+  {
+   "words": [
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131
+   ],
+   "slot": "top",
+   "scene": 2,
+   "br": 127
+  },
+  {
+   "words": [
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139
+   ],
+   "slot": "top",
+   "scene": 3,
+   "br": 137
+  },
+  {
+   "words": [
+    140,
+    141,
+    142,
+    143,
+    144
+   ],
+   "slot": "top",
+   "scene": 3
+  },
+  {
+   "words": [
+    145,
+    146,
+    147,
+    148,
+    149,
+    150
+   ],
+   "slot": "top",
+   "scene": 3,
+   "br": 148
+  },
+  {
+   "words": [
+    151,
+    152,
+    153,
+    154
+   ],
+   "slot": "top",
+   "scene": 3
+  },
+  {
+   "words": [
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162
+   ],
+   "slot": "top",
+   "scene": 3,
+   "br": 160
+  },
+  {
+   "words": [
+    163,
+    164,
+    165,
+    166,
+    167
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    168,
+    169,
+    170,
+    171,
+    172,
+    173
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    174,
+    175,
+    176,
+    177,
+    178
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    179,
+    180,
+    181,
+    182,
+    183,
+    184
+   ],
+   "slot": "top",
+   "scene": 4
+  },
+  {
+   "words": [
+    185,
+    186,
+    187,
+    188,
+    189
+   ],
+   "slot": "top",
+   "scene": 4,
+   "br": 188
+  },
+  {
+   "words": [
+    190,
+    191,
+    192,
+    193
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    206,
+    207,
+    208,
+    209,
+    210
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    211,
+    212,
+    213,
+    214
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    222,
+    223,
+    224
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    225,
+    226,
+    227
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    228,
+    229,
+    230,
+    231
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    232,
+    233,
+    234,
+    235
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    236,
+    237,
+    238,
+    239,
+    240,
+    241
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    242,
+    243,
+    244,
+    245,
+    246,
+    247
+   ],
+   "slot": "top",
+   "scene": 5
+  },
+  {
+   "words": [
+    248,
+    249,
+    250
+   ],
+   "slot": "top",
+   "scene": 5
+  }
+ ],
+ "words": [
+  {
+   "w": "Thanda",
+   "key": false,
+   "emoji": null,
+   "t": 0.0,
+   "e": 0.303
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 0.303,
+   "e": 0.605
+  },
+  {
+   "w": "neeche",
+   "key": false,
+   "emoji": null,
+   "t": 0.605,
+   "e": 0.908
+  },
+  {
+   "w": "doob",
+   "key": true,
+   "emoji": null,
+   "t": 0.908,
+   "e": 1.059
+  },
+  {
+   "w": "jaata",
+   "key": false,
+   "emoji": null,
+   "t": 1.059,
+   "e": 1.362
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 1.362,
+   "e": 1.513
+  },
+  {
+   "w": "Toh",
+   "key": false,
+   "emoji": null,
+   "t": 1.713,
+   "e": 1.863
+  },
+  {
+   "w": "phir",
+   "key": false,
+   "emoji": null,
+   "t": 1.863,
+   "e": 2.013
+  },
+  {
+   "w": "frozen",
+   "key": true,
+   "emoji": null,
+   "t": 2.013,
+   "e": 2.313
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 2.313,
+   "e": 2.613
+  },
+  {
+   "w": "float",
+   "key": false,
+   "emoji": null,
+   "t": 2.613,
+   "e": 2.763
+  },
+  {
+   "w": "karke",
+   "key": false,
+   "emoji": null,
+   "t": 2.763,
+   "e": 3.062
+  },
+  {
+   "w": "upar",
+   "key": false,
+   "emoji": null,
+   "t": 3.062,
+   "e": 3.362
+  },
+  {
+   "w": "kyun",
+   "key": false,
+   "emoji": null,
+   "t": 3.362,
+   "e": 3.512
+  },
+  {
+   "w": "rehta",
+   "key": false,
+   "emoji": null,
+   "t": 3.512,
+   "e": 3.812
+  },
+  {
+   "w": "hai?",
+   "key": false,
+   "emoji": null,
+   "t": 3.812,
+   "e": 3.962
+  },
+  {
+   "w": "Dekho",
+   "key": false,
+   "emoji": null,
+   "t": 4.412,
+   "e": 4.871
+  },
+  {
+   "w": "ek",
+   "key": false,
+   "emoji": null,
+   "t": 4.871,
+   "e": 5.101
+  },
+  {
+   "w": "lake",
+   "key": true,
+   "emoji": null,
+   "t": 5.101,
+   "e": 5.56
+  },
+  {
+   "w": "ko,",
+   "key": false,
+   "emoji": null,
+   "t": 5.56,
+   "e": 5.79
+  },
+  {
+   "w": "autumn",
+   "key": false,
+   "emoji": null,
+   "t": 5.91,
+   "e": 6.7
+  },
+  {
+   "w": "mein.",
+   "key": false,
+   "emoji": null,
+   "t": 6.7,
+   "e": 7.095
+  },
+  {
+   "w": "Upar",
+   "key": false,
+   "emoji": null,
+   "t": 7.295,
+   "e": 7.598
+  },
+  {
+   "w": "ka",
+   "key": false,
+   "emoji": null,
+   "t": 7.598,
+   "e": 7.75
+  },
+  {
+   "w": "surface",
+   "key": false,
+   "emoji": null,
+   "t": 7.75,
+   "e": 8.204
+  },
+  {
+   "w": "water",
+   "key": false,
+   "emoji": null,
+   "t": 8.204,
+   "e": 8.508
+  },
+  {
+   "w": "thanda",
+   "key": false,
+   "emoji": null,
+   "t": 8.508,
+   "e": 8.811
+  },
+  {
+   "w": "hota",
+   "key": false,
+   "emoji": null,
+   "t": 8.811,
+   "e": 9.114
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 9.114,
+   "e": 9.265
+  },
+  {
+   "w": "bhaari",
+   "key": true,
+   "emoji": null,
+   "t": 9.265,
+   "e": 9.568
+  },
+  {
+   "w": "hota",
+   "key": false,
+   "emoji": null,
+   "t": 9.568,
+   "e": 9.872
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 9.872,
+   "e": 10.023
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 10.023,
+   "e": 10.175
+  },
+  {
+   "w": "doob",
+   "key": false,
+   "emoji": null,
+   "t": 10.175,
+   "e": 10.326
+  },
+  {
+   "w": "jaata",
+   "key": false,
+   "emoji": null,
+   "t": 10.326,
+   "e": 10.629
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 10.629,
+   "e": 10.781
+  },
+  {
+   "w": "Ye",
+   "key": false,
+   "emoji": null,
+   "t": 10.981,
+   "e": 11.155
+  },
+  {
+   "w": "tab",
+   "key": false,
+   "emoji": null,
+   "t": 11.155,
+   "e": 11.329
+  },
+  {
+   "w": "tak",
+   "key": false,
+   "emoji": null,
+   "t": 11.329,
+   "e": 11.502
+  },
+  {
+   "w": "chalta",
+   "key": false,
+   "emoji": null,
+   "t": 11.502,
+   "e": 11.85
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 11.85,
+   "e": 12.024
+  },
+  {
+   "w": "jab",
+   "key": false,
+   "emoji": null,
+   "t": 12.024,
+   "e": 12.197
+  },
+  {
+   "w": "tak",
+   "key": false,
+   "emoji": null,
+   "t": 12.197,
+   "e": 12.371
+  },
+  {
+   "w": "poori",
+   "key": false,
+   "emoji": null,
+   "t": 12.371,
+   "e": 12.719
+  },
+  {
+   "w": "lake",
+   "key": false,
+   "emoji": null,
+   "t": 12.719,
+   "e": 13.066
+  },
+  {
+   "w": "lagbhag",
+   "key": false,
+   "emoji": null,
+   "t": 13.066,
+   "e": 13.414
+  },
+  {
+   "w": "chaar",
+   "key": true,
+   "emoji": null,
+   "t": 13.414,
+   "e": 13.587
+  },
+  {
+   "w": "degree",
+   "key": false,
+   "emoji": null,
+   "t": 13.587,
+   "e": 13.935
+  },
+  {
+   "w": "pe",
+   "key": false,
+   "emoji": null,
+   "t": 13.935,
+   "e": 14.109
+  },
+  {
+   "w": "na",
+   "key": false,
+   "emoji": null,
+   "t": 14.109,
+   "e": 14.282
+  },
+  {
+   "w": "aa",
+   "key": false,
+   "emoji": null,
+   "t": 14.282,
+   "e": 14.456
+  },
+  {
+   "w": "jaaye.",
+   "key": false,
+   "emoji": null,
+   "t": 14.456,
+   "e": 14.63
+  },
+  {
+   "w": "Phir",
+   "key": false,
+   "emoji": null,
+   "t": 15.08,
+   "e": 15.217
+  },
+  {
+   "w": "rule",
+   "key": false,
+   "emoji": null,
+   "t": 15.217,
+   "e": 15.492
+  },
+  {
+   "w": "palat",
+   "key": true,
+   "emoji": null,
+   "t": 15.492,
+   "e": 15.766
+  },
+  {
+   "w": "jaata",
+   "key": false,
+   "emoji": null,
+   "t": 15.766,
+   "e": 16.041
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 16.041,
+   "e": 16.178
+  },
+  {
+   "w": "Chaar",
+   "key": false,
+   "emoji": null,
+   "t": 16.378,
+   "e": 16.557
+  },
+  {
+   "w": "degree",
+   "key": false,
+   "emoji": null,
+   "t": 16.557,
+   "e": 16.914
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 16.914,
+   "e": 17.093
+  },
+  {
+   "w": "neeche,",
+   "key": false,
+   "emoji": null,
+   "t": 17.093,
+   "e": 17.45
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 17.83,
+   "e": 18.095
+  },
+  {
+   "w": "thanda",
+   "key": false,
+   "emoji": null,
+   "t": 18.095,
+   "e": 18.36
+  },
+  {
+   "w": "hone",
+   "key": false,
+   "emoji": null,
+   "t": 18.36,
+   "e": 18.625
+  },
+  {
+   "w": "pe",
+   "key": false,
+   "emoji": null,
+   "t": 18.625,
+   "e": 18.757
+  },
+  {
+   "w": "halka",
+   "key": true,
+   "emoji": null,
+   "t": 18.758,
+   "e": 19.022
+  },
+  {
+   "w": "hota",
+   "key": false,
+   "emoji": null,
+   "t": 19.022,
+   "e": 19.287
+  },
+  {
+   "w": "jaata",
+   "key": false,
+   "emoji": null,
+   "t": 19.287,
+   "e": 19.552
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 19.552,
+   "e": 19.685
+  },
+  {
+   "w": "Sabse",
+   "key": false,
+   "emoji": null,
+   "t": 19.885,
+   "e": 20.159
+  },
+  {
+   "w": "thanda",
+   "key": false,
+   "emoji": null,
+   "t": 20.159,
+   "e": 20.432
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 20.432,
+   "e": 20.706
+  },
+  {
+   "w": "upar",
+   "key": false,
+   "emoji": null,
+   "t": 20.706,
+   "e": 20.98
+  },
+  {
+   "w": "rehta",
+   "key": false,
+   "emoji": null,
+   "t": 20.98,
+   "e": 21.253
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 21.253,
+   "e": 21.39
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 21.78,
+   "e": 21.902
+  },
+  {
+   "w": "wahin",
+   "key": false,
+   "emoji": null,
+   "t": 21.902,
+   "e": 22.145
+  },
+  {
+   "w": "ice",
+   "key": true,
+   "emoji": null,
+   "t": 22.145,
+   "e": 22.388
+  },
+  {
+   "w": "banti",
+   "key": false,
+   "emoji": null,
+   "t": 22.388,
+   "e": 22.631
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 22.631,
+   "e": 22.753
+  },
+  {
+   "w": "Kyun?",
+   "key": false,
+   "emoji": null,
+   "t": 23.203,
+   "e": 23.437
+  },
+  {
+   "w": "Ye",
+   "key": false,
+   "emoji": null,
+   "t": 23.637,
+   "e": 23.777
+  },
+  {
+   "w": "dekhne",
+   "key": false,
+   "emoji": null,
+   "t": 23.777,
+   "e": 24.057
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 24.057,
+   "e": 24.197
+  },
+  {
+   "w": "liye",
+   "key": false,
+   "emoji": null,
+   "t": 24.197,
+   "e": 24.337
+  },
+  {
+   "w": "zoom",
+   "key": true,
+   "emoji": null,
+   "t": 24.337,
+   "e": 24.477
+  },
+  {
+   "w": "in",
+   "key": false,
+   "emoji": null,
+   "t": 24.477,
+   "e": 24.617
+  },
+  {
+   "w": "karo.",
+   "key": false,
+   "emoji": null,
+   "t": 24.617,
+   "e": 24.897
+  },
+  {
+   "w": "Liquid",
+   "key": false,
+   "emoji": null,
+   "t": 25.097,
+   "e": 25.397
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 25.397,
+   "e": 25.696
+  },
+  {
+   "w": "mein",
+   "key": false,
+   "emoji": null,
+   "t": 25.696,
+   "e": 25.846
+  },
+  {
+   "w": "molecules",
+   "key": false,
+   "emoji": null,
+   "t": 25.846,
+   "e": 26.445
+  },
+  {
+   "w": "ek",
+   "key": false,
+   "emoji": null,
+   "t": 26.445,
+   "e": 26.595
+  },
+  {
+   "w": "doosre",
+   "key": false,
+   "emoji": null,
+   "t": 26.595,
+   "e": 26.895
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 26.895,
+   "e": 27.045
+  },
+  {
+   "w": "paas",
+   "key": false,
+   "emoji": null,
+   "t": 27.045,
+   "e": 27.195
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 27.195,
+   "e": 27.344
+  },
+  {
+   "w": "ludhakte",
+   "key": true,
+   "emoji": null,
+   "t": 27.344,
+   "e": 27.794
+  },
+  {
+   "w": "hue",
+   "key": false,
+   "emoji": null,
+   "t": 27.794,
+   "e": 27.944
+  },
+  {
+   "w": "nikalte",
+   "key": false,
+   "emoji": null,
+   "t": 27.944,
+   "e": 28.393
+  },
+  {
+   "w": "hain.",
+   "key": false,
+   "emoji": null,
+   "t": 28.393,
+   "e": 28.543
+  },
+  {
+   "w": "Unke",
+   "key": false,
+   "emoji": null,
+   "t": 28.743,
+   "e": 29.105
+  },
+  {
+   "w": "beech",
+   "key": false,
+   "emoji": null,
+   "t": 29.105,
+   "e": 29.286
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 29.286,
+   "e": 29.467
+  },
+  {
+   "w": "weak",
+   "key": false,
+   "emoji": null,
+   "t": 29.467,
+   "e": 29.648
+  },
+  {
+   "w": "bonds",
+   "key": false,
+   "emoji": null,
+   "t": 29.648,
+   "e": 29.829
+  },
+  {
+   "w": "toot",
+   "key": false,
+   "emoji": null,
+   "t": 29.829,
+   "e": 30.01
+  },
+  {
+   "w": "jaate",
+   "key": false,
+   "emoji": null,
+   "t": 30.01,
+   "e": 30.372
+  },
+  {
+   "w": "hain",
+   "key": false,
+   "emoji": null,
+   "t": 30.372,
+   "e": 30.553
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 30.553,
+   "e": 30.734
+  },
+  {
+   "w": "phir",
+   "key": false,
+   "emoji": null,
+   "t": 30.734,
+   "e": 30.915
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 30.915,
+   "e": 31.096
+  },
+  {
+   "w": "ban",
+   "key": false,
+   "emoji": null,
+   "t": 31.096,
+   "e": 31.277
+  },
+  {
+   "w": "jaate",
+   "key": false,
+   "emoji": null,
+   "t": 31.277,
+   "e": 31.639
+  },
+  {
+   "w": "hain,",
+   "key": false,
+   "emoji": null,
+   "t": 31.639,
+   "e": 31.82
+  },
+  {
+   "w": "ek",
+   "key": false,
+   "emoji": null,
+   "t": 32.29,
+   "e": 32.462
+  },
+  {
+   "w": "second",
+   "key": false,
+   "emoji": null,
+   "t": 32.462,
+   "e": 32.805
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 32.805,
+   "e": 32.977
+  },
+  {
+   "w": "trillionth",
+   "key": true,
+   "emoji": null,
+   "t": 32.977,
+   "e": 33.32
+  },
+  {
+   "w": "hisse",
+   "key": false,
+   "emoji": null,
+   "t": 33.32,
+   "e": 33.664
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 33.664,
+   "e": 33.836
+  },
+  {
+   "w": "bhi",
+   "key": false,
+   "emoji": null,
+   "t": 33.836,
+   "e": 34.007
+  },
+  {
+   "w": "kam",
+   "key": false,
+   "emoji": null,
+   "t": 34.008,
+   "e": 34.179
+  },
+  {
+   "w": "mein.",
+   "key": false,
+   "emoji": null,
+   "t": 34.179,
+   "e": 34.351
+  },
+  {
+   "w": "Isliye",
+   "key": false,
+   "emoji": null,
+   "t": 34.551,
+   "e": 34.799
+  },
+  {
+   "w": "kuch",
+   "key": false,
+   "emoji": null,
+   "t": 34.799,
+   "e": 34.923
+  },
+  {
+   "w": "bhi",
+   "key": false,
+   "emoji": null,
+   "t": 34.923,
+   "e": 35.048
+  },
+  {
+   "w": "ek",
+   "key": false,
+   "emoji": null,
+   "t": 35.048,
+   "e": 35.172
+  },
+  {
+   "w": "jagah",
+   "key": false,
+   "emoji": null,
+   "t": 35.172,
+   "e": 35.42
+  },
+  {
+   "w": "ruka",
+   "key": true,
+   "emoji": null,
+   "t": 35.42,
+   "e": 35.668
+  },
+  {
+   "w": "nahi",
+   "key": false,
+   "emoji": null,
+   "t": 35.668,
+   "e": 35.917
+  },
+  {
+   "w": "rehta.",
+   "key": false,
+   "emoji": null,
+   "t": 35.917,
+   "e": 36.165
+  },
+  {
+   "w": "Inhe",
+   "key": false,
+   "emoji": null,
+   "t": 36.615,
+   "e": 36.946
+  },
+  {
+   "w": "freeze",
+   "key": false,
+   "emoji": null,
+   "t": 36.946,
+   "e": 37.278
+  },
+  {
+   "w": "karo,",
+   "key": false,
+   "emoji": null,
+   "t": 37.278,
+   "e": 37.609
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 37.609,
+   "e": 37.774
+  },
+  {
+   "w": "har",
+   "key": false,
+   "emoji": null,
+   "t": 37.774,
+   "e": 37.94
+  },
+  {
+   "w": "oxygen",
+   "key": true,
+   "emoji": null,
+   "t": 37.94,
+   "e": 38.437
+  },
+  {
+   "w": "apne",
+   "key": false,
+   "emoji": null,
+   "t": 38.437,
+   "e": 38.768
+  },
+  {
+   "w": "chaar",
+   "key": false,
+   "emoji": null,
+   "t": 38.768,
+   "e": 38.934
+  },
+  {
+   "w": "padosiyon",
+   "key": false,
+   "emoji": null,
+   "t": 38.934,
+   "e": 39.431
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 39.431,
+   "e": 39.596
+  },
+  {
+   "w": "jud",
+   "key": false,
+   "emoji": null,
+   "t": 39.596,
+   "e": 39.762
+  },
+  {
+   "w": "jaata",
+   "key": false,
+   "emoji": null,
+   "t": 39.762,
+   "e": 40.093
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 40.093,
+   "e": 40.259
+  },
+  {
+   "w": "Ye",
+   "key": false,
+   "emoji": null,
+   "t": 40.459,
+   "e": 40.67
+  },
+  {
+   "w": "bonds",
+   "key": false,
+   "emoji": null,
+   "t": 40.67,
+   "e": 40.881
+  },
+  {
+   "w": "milkar",
+   "key": false,
+   "emoji": null,
+   "t": 40.881,
+   "e": 41.304
+  },
+  {
+   "w": "rings",
+   "key": true,
+   "emoji": null,
+   "t": 41.304,
+   "e": 41.515
+  },
+  {
+   "w": "banate",
+   "key": false,
+   "emoji": null,
+   "t": 41.515,
+   "e": 42.149
+  },
+  {
+   "w": "hain,",
+   "key": false,
+   "emoji": null,
+   "t": 42.149,
+   "e": 42.36
+  },
+  {
+   "w": "har",
+   "key": false,
+   "emoji": null,
+   "t": 42.73,
+   "e": 42.942
+  },
+  {
+   "w": "ring",
+   "key": false,
+   "emoji": null,
+   "t": 42.943,
+   "e": 43.155
+  },
+  {
+   "w": "mein",
+   "key": false,
+   "emoji": null,
+   "t": 43.155,
+   "e": 43.367
+  },
+  {
+   "w": "chheh,",
+   "key": false,
+   "emoji": null,
+   "t": 43.368,
+   "e": 43.58
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 44.06,
+   "e": 44.275
+  },
+  {
+   "w": "ye",
+   "key": false,
+   "emoji": null,
+   "t": 44.275,
+   "e": 44.489
+  },
+  {
+   "w": "layer",
+   "key": false,
+   "emoji": null,
+   "t": 44.489,
+   "e": 44.704
+  },
+  {
+   "w": "pe",
+   "key": false,
+   "emoji": null,
+   "t": 44.704,
+   "e": 44.919
+  },
+  {
+   "w": "layer",
+   "key": false,
+   "emoji": null,
+   "t": 44.919,
+   "e": 45.133
+  },
+  {
+   "w": "jam",
+   "key": false,
+   "emoji": null,
+   "t": 45.133,
+   "e": 45.348
+  },
+  {
+   "w": "jaate",
+   "key": false,
+   "emoji": null,
+   "t": 45.348,
+   "e": 45.777
+  },
+  {
+   "w": "hain.",
+   "key": false,
+   "emoji": null,
+   "t": 45.777,
+   "e": 45.992
+  },
+  {
+   "w": "Ye",
+   "key": false,
+   "emoji": null,
+   "t": 46.442,
+   "e": 46.614
+  },
+  {
+   "w": "cage",
+   "key": true,
+   "emoji": null,
+   "t": 46.614,
+   "e": 46.959
+  },
+  {
+   "w": "khula",
+   "key": false,
+   "emoji": null,
+   "t": 46.959,
+   "e": 47.303
+  },
+  {
+   "w": "hua",
+   "key": false,
+   "emoji": null,
+   "t": 47.303,
+   "e": 47.476
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 47.476,
+   "e": 47.648
+  },
+  {
+   "w": "Molecules",
+   "key": false,
+   "emoji": null,
+   "t": 47.848,
+   "e": 48.667
+  },
+  {
+   "w": "ab",
+   "key": false,
+   "emoji": null,
+   "t": 48.667,
+   "e": 48.872
+  },
+  {
+   "w": "zyada",
+   "key": false,
+   "emoji": null,
+   "t": 48.872,
+   "e": 49.281
+  },
+  {
+   "w": "door",
+   "key": true,
+   "emoji": null,
+   "t": 49.281,
+   "e": 49.486
+  },
+  {
+   "w": "baithte",
+   "key": false,
+   "emoji": null,
+   "t": 49.486,
+   "e": 49.895
+  },
+  {
+   "w": "hain,",
+   "key": false,
+   "emoji": null,
+   "t": 49.895,
+   "e": 50.1
+  },
+  {
+   "w": "liquid",
+   "key": false,
+   "emoji": null,
+   "t": 50.54,
+   "e": 50.877
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 50.877,
+   "e": 51.045
+  },
+  {
+   "w": "bhi",
+   "key": false,
+   "emoji": null,
+   "t": 51.045,
+   "e": 51.214
+  },
+  {
+   "w": "zyada",
+   "key": false,
+   "emoji": null,
+   "t": 51.214,
+   "e": 51.551
+  },
+  {
+   "w": "door.",
+   "key": false,
+   "emoji": null,
+   "t": 51.551,
+   "e": 51.719
+  },
+  {
+   "w": "Toh",
+   "key": false,
+   "emoji": null,
+   "t": 51.919,
+   "e": 52.075
+  },
+  {
+   "w": "wahi",
+   "key": false,
+   "emoji": null,
+   "t": 52.075,
+   "e": 52.386
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 52.386,
+   "e": 52.698
+  },
+  {
+   "w": "ab",
+   "key": false,
+   "emoji": null,
+   "t": 52.698,
+   "e": 52.854
+  },
+  {
+   "w": "leta",
+   "key": false,
+   "emoji": null,
+   "t": 52.854,
+   "e": 53.166
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 53.166,
+   "e": 53.321
+  },
+  {
+   "w": "lagbhag",
+   "key": false,
+   "emoji": null,
+   "t": 53.322,
+   "e": 53.633
+  },
+  {
+   "w": "nau",
+   "key": false,
+   "emoji": null,
+   "t": 53.633,
+   "e": 53.789
+  },
+  {
+   "w": "percent",
+   "key": true,
+   "emoji": null,
+   "t": 53.789,
+   "e": 54.101
+  },
+  {
+   "w": "zyada",
+   "key": false,
+   "emoji": null,
+   "t": 54.101,
+   "e": 54.412
+  },
+  {
+   "w": "jagah.",
+   "key": false,
+   "emoji": null,
+   "t": 54.412,
+   "e": 54.724
+  },
+  {
+   "w": "Wahi",
+   "key": false,
+   "emoji": null,
+   "t": 55.174,
+   "e": 55.512
+  },
+  {
+   "w": "paani,",
+   "key": false,
+   "emoji": null,
+   "t": 55.512,
+   "e": 55.85
+  },
+  {
+   "w": "zyada",
+   "key": false,
+   "emoji": null,
+   "t": 56.11,
+   "e": 56.512
+  },
+  {
+   "w": "jagah.",
+   "key": true,
+   "emoji": null,
+   "t": 56.513,
+   "e": 56.915
+  },
+  {
+   "w": "Isliye",
+   "key": false,
+   "emoji": null,
+   "t": 57.115,
+   "e": 57.424
+  },
+  {
+   "w": "ice",
+   "key": false,
+   "emoji": null,
+   "t": 57.424,
+   "e": 57.733
+  },
+  {
+   "w": "apne",
+   "key": false,
+   "emoji": null,
+   "t": 57.733,
+   "e": 58.043
+  },
+  {
+   "w": "aas",
+   "key": false,
+   "emoji": null,
+   "t": 58.043,
+   "e": 58.197
+  },
+  {
+   "w": "paas",
+   "key": false,
+   "emoji": null,
+   "t": 58.197,
+   "e": 58.352
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 58.352,
+   "e": 58.506
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 58.506,
+   "e": 58.816
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 58.816,
+   "e": 58.97
+  },
+  {
+   "w": "halki",
+   "key": true,
+   "emoji": null,
+   "t": 58.97,
+   "e": 59.279
+  },
+  {
+   "w": "ho",
+   "key": false,
+   "emoji": null,
+   "t": 59.279,
+   "e": 59.434
+  },
+  {
+   "w": "jaati",
+   "key": false,
+   "emoji": null,
+   "t": 59.434,
+   "e": 59.743
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 59.743,
+   "e": 59.898
+  },
+  {
+   "w": "aur",
+   "key": false,
+   "emoji": null,
+   "t": 59.898,
+   "e": 60.052
+  },
+  {
+   "w": "upar",
+   "key": false,
+   "emoji": null,
+   "t": 60.052,
+   "e": 60.362
+  },
+  {
+   "w": "aa",
+   "key": false,
+   "emoji": null,
+   "t": 60.362,
+   "e": 60.516
+  },
+  {
+   "w": "jaati",
+   "key": false,
+   "emoji": null,
+   "t": 60.516,
+   "e": 60.825
+  },
+  {
+   "w": "hai.",
+   "key": false,
+   "emoji": null,
+   "t": 60.825,
+   "e": 60.98
+  },
+  {
+   "w": "Ye",
+   "key": false,
+   "emoji": null,
+   "t": 61.18,
+   "e": 61.317
+  },
+  {
+   "w": "tairta",
+   "key": false,
+   "emoji": null,
+   "t": 61.317,
+   "e": 61.591
+  },
+  {
+   "w": "hua",
+   "key": false,
+   "emoji": null,
+   "t": 61.591,
+   "e": 61.727
+  },
+  {
+   "w": "dhakkan",
+   "key": true,
+   "emoji": null,
+   "t": 61.727,
+   "e": 62.001
+  },
+  {
+   "w": "neeche",
+   "key": false,
+   "emoji": null,
+   "t": 62.001,
+   "e": 62.275
+  },
+  {
+   "w": "ke",
+   "key": false,
+   "emoji": null,
+   "t": 62.275,
+   "e": 62.412
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 62.412,
+   "e": 62.685
+  },
+  {
+   "w": "ko",
+   "key": false,
+   "emoji": null,
+   "t": 62.685,
+   "e": 62.822
+  },
+  {
+   "w": "insulate",
+   "key": false,
+   "emoji": null,
+   "t": 62.822,
+   "e": 63.369
+  },
+  {
+   "w": "karta",
+   "key": false,
+   "emoji": null,
+   "t": 63.369,
+   "e": 63.643
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 63.643,
+   "e": 63.78
+  },
+  {
+   "w": "isliye",
+   "key": false,
+   "emoji": null,
+   "t": 64.06,
+   "e": 64.334
+  },
+  {
+   "w": "talaab",
+   "key": false,
+   "emoji": null,
+   "t": 64.334,
+   "e": 64.609
+  },
+  {
+   "w": "aksar",
+   "key": false,
+   "emoji": null,
+   "t": 64.609,
+   "e": 64.883
+  },
+  {
+   "w": "poore",
+   "key": false,
+   "emoji": null,
+   "t": 64.883,
+   "e": 65.157
+  },
+  {
+   "w": "nahi",
+   "key": false,
+   "emoji": null,
+   "t": 65.157,
+   "e": 65.432
+  },
+  {
+   "w": "jamte.",
+   "key": true,
+   "emoji": null,
+   "t": 65.432,
+   "e": 65.706
+  },
+  {
+   "w": "Ice",
+   "key": false,
+   "emoji": null,
+   "t": 66.156,
+   "e": 66.475
+  },
+  {
+   "w": "isliye",
+   "key": false,
+   "emoji": null,
+   "t": 66.475,
+   "e": 66.795
+  },
+  {
+   "w": "tairti",
+   "key": false,
+   "emoji": null,
+   "t": 66.795,
+   "e": 67.114
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 67.114,
+   "e": 67.274
+  },
+  {
+   "w": "kyunki",
+   "key": false,
+   "emoji": null,
+   "t": 67.274,
+   "e": 67.594
+  },
+  {
+   "w": "jamte",
+   "key": false,
+   "emoji": null,
+   "t": 67.594,
+   "e": 67.913
+  },
+  {
+   "w": "waqt",
+   "key": false,
+   "emoji": null,
+   "t": 67.913,
+   "e": 68.073
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 68.073,
+   "e": 68.392
+  },
+  {
+   "w": "khulkar",
+   "key": false,
+   "emoji": null,
+   "t": 68.392,
+   "e": 68.712
+  },
+  {
+   "w": "ek",
+   "key": false,
+   "emoji": null,
+   "t": 68.712,
+   "e": 68.872
+  },
+  {
+   "w": "cage",
+   "key": true,
+   "emoji": null,
+   "t": 68.872,
+   "e": 69.191
+  },
+  {
+   "w": "ban",
+   "key": false,
+   "emoji": null,
+   "t": 69.191,
+   "e": 69.351
+  },
+  {
+   "w": "jaata",
+   "key": false,
+   "emoji": null,
+   "t": 69.351,
+   "e": 69.67
+  },
+  {
+   "w": "hai,",
+   "key": false,
+   "emoji": null,
+   "t": 69.67,
+   "e": 69.83
+  },
+  {
+   "w": "jo",
+   "key": false,
+   "emoji": null,
+   "t": 70.08,
+   "e": 70.237
+  },
+  {
+   "w": "usi",
+   "key": false,
+   "emoji": null,
+   "t": 70.237,
+   "e": 70.551
+  },
+  {
+   "w": "paani",
+   "key": false,
+   "emoji": null,
+   "t": 70.551,
+   "e": 70.864
+  },
+  {
+   "w": "se",
+   "key": false,
+   "emoji": null,
+   "t": 70.864,
+   "e": 71.021
+  },
+  {
+   "w": "halka",
+   "key": false,
+   "emoji": null,
+   "t": 71.021,
+   "e": 71.335
+  },
+  {
+   "w": "hai",
+   "key": false,
+   "emoji": null,
+   "t": 71.335,
+   "e": 71.492
+  },
+  {
+   "w": "jisse",
+   "key": false,
+   "emoji": null,
+   "t": 71.492,
+   "e": 71.805
+  },
+  {
+   "w": "wo",
+   "key": false,
+   "emoji": null,
+   "t": 71.805,
+   "e": 71.962
+  },
+  {
+   "w": "bana.",
+   "key": false,
+   "emoji": null,
+   "t": 71.962,
+   "e": 72.276
+  }
+ ],
+ "cues": {
+  "cold": "thanda",
+  "sinks": "doob",
+  "top": "upar",
+  "watch": "dekho",
+  "cools": "thanda",
+  "heavier": "bhaari",
+  "four": "chaar",
+  "flips": "palat",
+  "lighter": [
+   "halki",
+   "halka"
+  ],
+  "coldest": "sabse",
+  "where": "wahin",
+  "tumble": "ludhakte",
+  "break": "toot",
+  "still": "ruka",
+  "six": "chheh",
+  "farther": "door",
+  "same": "wahi",
+  "takes": "leta",
+  "nine": "nau",
+  "space": "jagah",
+  "rises": "upar",
+  "lid": "dhakkan",
+  "below": "neeche",
+  "ponds": "talaab",
+  "solid": "jamte",
+  "zoom": "kyun"
+ }
+}

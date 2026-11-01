@@ -1,0 +1,14 @@
+{
+  "name": "reelsthatmatters",
+  "description": "Logline's plugins for making explainer reels with Claude Code.",
+  "owner": {
+    "name": "Logline"
+  },
+  "plugins": [
+    {
+      "name": "reelsthatmatters",
+      "source": "./",
+      "description": "Researched, narrated explainer reels animated in code, in 2D or real 3D, with checks on every render."
+    }
+  ]
+}
