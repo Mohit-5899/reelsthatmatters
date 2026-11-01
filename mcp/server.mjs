@@ -8,7 +8,8 @@
 //
 // Where the reels live: a git checkout with node_modules works in place. An installed plugin keeps its code in a folder
 // that is replaced on every update (Claude Code may run npm install there too, so node_modules alone proves nothing),
-// so it works in RTM_HOME instead (~/reelsthatmatters by default); `setup` puts the engine there and installs it, and never touches the reels already in it.
+// so it works in RTM_HOME instead (~/reelsthatmatters by default); `setup` puts the engine there and installs it, and
+// never touches the reels already in it.
 import { spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
@@ -22,7 +23,7 @@ const ROOT = process.env.RTM_HOME ? path.resolve(process.env.RTM_HOME.replace(/^
 const ENGINE = path.join(ROOT, "engine");
 const REELS = path.join(ENGINE, "reels");
 const PY = process.env.SH_PYTHON || "python3";
-const VERSION = "0.1.1";
+const VERSION = "0.1.2";
 const SLUG = /^[a-z0-9][a-z0-9-]{0,60}$/;
 
 // one step = one command in the engine folder; the result is its exit code and the last of its output
@@ -95,7 +96,7 @@ export const ${name}: React.FC = () => {
 
 const TOOLS = {
   setup: {
-    description: "Run once before anything else, and again after the plugin updates: puts the engine in the reels folder, installs it (npm), and checks ffmpeg, Python (numpy, Pillow) and whisper. Never touches existing reels.",
+    description: "Run once before anything else, and again after the plugin updates: puts the engine in the reels folder, installs it (npm), checks ffmpeg, Python (numpy, Pillow) and whisper, and downloads the whisper model (about 490 MB) once. Never touches existing reels.",
     input: {},
     required: [],
     async run() {
@@ -117,8 +118,16 @@ const TOOLS = {
       steps.push({ step: "npm install", ...(await run("npm", ["install", "--no-audit", "--no-fund"], 20 * 60_000, ROOT)) });
       steps.push({ step: "ffmpeg", ...(await run("ffmpeg", ["-version"], 60_000, ROOT)) });
       steps.push({ step: "python", ...(await run(PY, ["-c", "import numpy, PIL; print('numpy', numpy.__version__, 'Pillow', PIL.__version__)"], 60_000, ROOT)) });
+      // voice checks the last line of every take with whisper.cpp, so the program and its model are both needed
       const w = await run("whisper-cli", ["--help"], 60_000, ROOT);
-      steps.push({ step: "whisper (optional)", pass: true, out: w.pass ? "whisper-cli found" : "whisper-cli missing: align.py falls back to the ElevenLabs alignment. On a Mac: brew install whisper-cpp" });
+      steps.push({ step: "whisper", pass: w.pass, out: w.pass ? "whisper-cli found" : "whisper-cli missing: on a Mac, brew install whisper-cpp, then run setup again" });
+      const model = path.join(ROOT, "models", "ggml-small.en.bin");
+      if (!fs.existsSync(model)) {
+        fs.mkdirSync(path.dirname(model), { recursive: true });
+        const d = await run("curl", ["-fL", "--retry", "3", "-o", model + ".part", "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en.bin"], 30 * 60_000, ROOT);
+        if (d.pass) fs.renameSync(model + ".part", model);
+        steps.push({ step: "whisper model", pass: d.pass, out: d.pass ? `downloaded ${model} (about 490 MB)` : d.out });
+      } else steps.push({ step: "whisper model", pass: true, out: `found ${model}` });
       for (const s of steps) s.out = s.out.split("\n").slice(-3).join("\n");
       return { home: ROOT, keys: `put ELEVENLABS_API_KEY or SARVAM_API_KEY in ${path.join(ROOT, ".env.local")}; never paste it in chat`, ...verdict(steps) };
     },

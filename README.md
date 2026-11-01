@@ -19,8 +19,8 @@ Then, in any Claude Code session:
 > make a reel about why ice floats
 
 The first time, Claude runs the `setup` tool. It puts the engine in `~/reelsthatmatters` (set `RTM_HOME` to change it),
-installs it, and checks ffmpeg, Python and whisper. Put a voice key in `~/reelsthatmatters/.env.local`, ElevenLabs or
-Sarvam (Indian voices; English, Hindi and Hinglish):
+installs it, checks ffmpeg, Python and whisper, and downloads the whisper model (about 490 MB) once. Put a voice key in
+`~/reelsthatmatters/.env.local`, ElevenLabs or Sarvam (Indian voices; English, Hindi and Hinglish):
 
 ```
 ELEVENLABS_API_KEY=...
@@ -47,7 +47,8 @@ claude mcp add reelsthatmatters -- node /path/to/reelsthatmatters/mcp/server.mjs
 
 ## From a checkout
 
-Node 22.12 or newer, Python 3 with numpy and Pillow, and ffmpeg. whisper.cpp is optional (`brew install whisper-cpp`).
+Node 22.12 or newer, Python 3 with numpy and Pillow, ffmpeg, and whisper.cpp (`brew install whisper-cpp`)
+with `models/ggml-small.en.bin` from huggingface.co/ggerganov/whisper.cpp; the voice step needs both.
 
 ```
 npm install
