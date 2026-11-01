@@ -2,13 +2,13 @@
 // reelsthatmatters MCP server. It runs on your own machine over stdio and gives an agent (Claude Code, or any MCP client)
 // the deterministic steps of a reel: set up, make the folder, voice it, time it, find 3D models, add music, check it,
 // draft it, render it. The agents write the research, the script and the scenes; every check here answers PASS or FAIL.
-// Nothing leaves your machine except the ElevenLabs calls (voice, music) with your own key, and Poly Haven model
+// Nothing leaves your machine except the ElevenLabs or Sarvam calls (voice, music) with your own key, and Poly Haven model
 // downloads when you turn them on.
 //   As a Claude Code plugin it starts on its own. By hand: claude mcp add reelsthatmatters -- node /path/to/mcp/server.mjs
 //
-// Where the reels live: a checkout with node_modules works in place. An installed plugin keeps its code in a folder
-// that is replaced on every update, so it works in RTM_HOME instead (~/reelsthatmatters by default); `setup` puts the
-// engine there and installs it, and never touches the reels already in it.
+// Where the reels live: a git checkout with node_modules works in place. An installed plugin keeps its code in a folder
+// that is replaced on every update (Claude Code may run npm install there too, so node_modules alone proves nothing),
+// so it works in RTM_HOME instead (~/reelsthatmatters by default); `setup` puts the engine there and installs it, and never touches the reels already in it.
 import { spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
@@ -18,11 +18,11 @@ import { fileURLToPath } from "node:url";
 
 const CODE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ROOT = process.env.RTM_HOME ? path.resolve(process.env.RTM_HOME.replace(/^~/, os.homedir()))
-  : fs.existsSync(path.join(CODE, "node_modules")) ? CODE : path.join(os.homedir(), "reelsthatmatters");
+  : fs.existsSync(path.join(CODE, "node_modules")) && fs.existsSync(path.join(CODE, ".git")) ? CODE : path.join(os.homedir(), "reelsthatmatters");
 const ENGINE = path.join(ROOT, "engine");
 const REELS = path.join(ENGINE, "reels");
 const PY = process.env.SH_PYTHON || "python3";
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 const SLUG = /^[a-z0-9][a-z0-9-]{0,60}$/;
 
 // one step = one command in the engine folder; the result is its exit code and the last of its output
