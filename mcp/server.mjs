@@ -25,7 +25,7 @@ const REELS = path.join(ENGINE, "reels");
 // the first Python that has numpy and Pillow: installing a Homebrew tool can put a bare python3 first on the PATH
 const PY = process.env.SH_PYTHON || ["python3", "/usr/bin/python3", "/opt/homebrew/bin/python3", "/usr/local/bin/python3"]
   .find((p) => spawnSync(p, ["-c", "import numpy, PIL"], { stdio: "ignore" }).status === 0) || "python3";
-const VERSION = "0.1.3";
+const VERSION = "0.1.4";
 const SLUG = /^[a-z0-9][a-z0-9-]{0,60}$/;
 
 // one step = one command in the engine folder; the result is its exit code and the last of its output
@@ -183,7 +183,8 @@ const TOOLS = {
     required: ["slug"],
     async run({ slug }) {
       needReel(slug);
-      return verdict([{ step: "check plan", ...(await run(PY, ["scripts/check.py", "plan", slug])) }]);
+      const plan = await run(PY, ["scripts/check.py", "plan", slug]);
+      return verdict([{ step: "check plan", ...plan }, { step: "caption fit", ...(await captionFit(slug)) }]);
     },
   },
   typecheck: {
@@ -197,31 +198,33 @@ const TOOLS = {
   },
   stills: {
     description: "Render still frames at the given seconds (half size), to look at before any video. Returns the PNG paths.",
-    input: { slug: "string", seconds: "array of numbers" },
+    input: { slug: "string", seconds: "array of numbers", caption: "boolean, optional: show the word caption (default: reel.json \"caption\")" },
     required: ["slug", "seconds"],
-    async run({ slug, seconds }) {
+    async run({ slug, seconds, caption }) {
       needReel(slug);
-      const r = await run("node", ["render.mjs", slug, "--stills", seconds.map(Number).join(","), "--half"]);
+      const at = (Array.isArray(seconds) ? seconds : String(seconds).split(",")).map(Number);
+      if (!at.length || at.some((x) => !Number.isFinite(x) || x < 0)) throw new Error(`stills: "seconds" must be numbers of seconds, like [2, 9.5]; got ${JSON.stringify(seconds)}`);
+      const r = await run("node", ["render.mjs", slug, "--stills", at.join(","), "--half", ...(captionOn(slug, caption) ? ["--caption"] : [])]);
       return { ...verdict([{ step: "stills", ...r }]), files: r.out.split("\n").filter((l) => l.endsWith(".png")) };
     },
   },
   draft: {
     description: "Render the moving DRAFT: the real drawn video at half size, stamped DRAFT and not checked yet. Show it before the final render.",
-    input: { slug: "string" },
+    input: { slug: "string", caption: "boolean, optional: burn in the word caption (default: reel.json \"caption\", else off)" },
     required: ["slug"],
-    async run({ slug }) {
+    async run({ slug, caption }) {
       needReel(slug);
-      const r = await run("node", ["draft.mjs", slug, "--no-open"]);
+      const r = await run("node", ["draft.mjs", slug, "--no-open", ...(captionOn(slug, caption) ? ["--caption"] : [])]);
       return { ...verdict([{ step: "draft", ...r }]), file: r.out.split("\n").filter((l) => l.endsWith(".mp4")).pop() ?? null };
     },
   },
   render: {
-    description: "Render the final reel at 1080x1920, 60 fps, then level its sound to -14 LUFS (the video is copied untouched).",
-    input: { slug: "string" },
+    description: "Render the final reel at 1080x1920, 60 fps, then level its sound to -14 LUFS (the video is copied untouched). The word caption is burned in when reel.json has \"caption\": true (or the call sets caption): use it for a voice the viewer may not follow by ear, or when asked.",
+    input: { slug: "string", caption: "boolean, optional: burn in the word caption (default: reel.json \"caption\", else off)" },
     required: ["slug"],
-    async run({ slug }) {
+    async run({ slug, caption }) {
       needReel(slug);
-      const r = await run("node", ["render.mjs", slug, "--concurrency", "4"], 90 * 60_000);
+      const r = await run("node", ["render.mjs", slug, "--concurrency", "4", ...(captionOn(slug, caption) ? ["--caption"] : [])], 90 * 60_000);
       const file = latestRender(slug);
       if (!r.pass || !file) return { ...verdict([{ step: "render", ...r }]), file };
       const l = await run(PY, ["scripts/loud.py", file, "--fix"]);
@@ -294,11 +297,28 @@ const TOOLS = {
   },
 };
 
+// The caption is laid out with the real font in the renderer, which lays out every block on the first frame,
+// so one caption still at 0 s proves every block fits in two lines.
+// A block that does not fit fails only when the reel shows its caption ("caption": true in reel.json).
+async function captionFit(slug) {
+  const r = await run("node", ["render.mjs", slug, "--caption", "--stills", "0", "--half"], 10 * 60_000);
+  fs.rmSync(path.join(REELS, slug, "stills", "t_000.00.png"), { force: true });
+  const over = r.out.match(/caption block \d+ needs \d+ lines[^\n]*/);
+  if (over) return captionOn(slug) ? { pass: false, out: `FAIL  ${over[0]}` }
+    : { pass: true, out: `WARN  ${over[0]} (the caption is off for this reel, so this only matters if you turn it on)` };
+  return r.pass ? { pass: true, out: "ok    every caption block fits in two lines" } : r;
+}
+// the word caption is burned in when the call asks for it, else when reel.json has "caption": true
+function captionOn(slug, asked) {
+  if (asked !== undefined) return asked === true || asked === "true";
+  try { return JSON.parse(fs.readFileSync(path.join(REELS, slug, "reel.json"), "utf8")).caption === true; } catch { return false; }
+}
+
 const schema = (t) => ({
   type: "object",
   properties: Object.fromEntries(Object.entries(t.input).map(([k, d]) => [k, d.startsWith("array")
     ? { type: "array", items: { type: d.includes("numbers") ? "number" : "string" }, description: d }
-    : { type: "string", description: d }])),
+    : d.startsWith("boolean") ? { type: "boolean", description: d } : { type: "string", description: d }])),
   required: t.required,
 });
 
@@ -313,8 +333,12 @@ async function handle(msg) {
   if (method === "tools/call") {
     const t = TOOLS[params?.name];
     if (!t) return { jsonrpc: "2.0", id, error: { code: -32602, message: `unknown tool ${params?.name}` } };
+    const a = params.arguments ?? {};
+    const missing = t.required.filter((k) => a[k] === undefined || a[k] === null || a[k] === "");
+    if (missing.length)
+      return ok({ content: [{ type: "text", text: `${params.name} needs ${missing.map((k) => `"${k}" (${t.input[k]})`).join(" and ")}` }], isError: true });
     try {
-      const r = await t.run(params.arguments ?? {});
+      const r = await t.run(a);
       return ok({ content: [{ type: "text", text: JSON.stringify(r, null, 2) }], isError: r.pass === false });
     } catch (e) {
       return ok({ content: [{ type: "text", text: String(e.message ?? e) }], isError: true });

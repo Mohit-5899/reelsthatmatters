@@ -79,7 +79,7 @@ track you have the rights to. It sits well under the voice, and the render is le
 
 | Check | What fails |
 |---|---|
-| plan | caption blocks too long, two key words in a block, a scene change outside silence |
+| plan | caption blocks too long or too wide for two lines, two key words in a block, a scene change outside silence |
 | render | nothing moving for over 1.2 s, bare ground during a scene change |
 | motion | a move too fast to follow, a cut or snap, a near-freeze then a jump, a scene under 2 s |
 | joins | a scene change where one frame swaps the picture |

@@ -2,7 +2,7 @@
 // Makes a quick draft of a reel so it can be watched before the checks and the final render. It is the real drawn,
 // animated video at half size and 30 fps, stamped DRAFT across the middle and "not checked yet" along the top.
 // It is never delivered.
-//   node draft.mjs <slug> [--concurrency n] [--no-open]
+//   node draft.mjs <slug> [--concurrency n] [--no-open] [--caption]
 // Writes reels/<slug>/draft/<slug>-DRAFT.mp4 and prints its path.
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
@@ -50,7 +50,7 @@ im.save(r"${stamp}")
 `]);
 
 const raw = path.join(outDir, "raw.mp4");
-run("node", ["render.mjs", slug, "--draft", "--out", raw, "--concurrency", opt("--concurrency") ?? "4"]);
+run("node", ["render.mjs", slug, "--draft", "--out", raw, "--concurrency", opt("--concurrency") ?? "4", ...(args.includes("--caption") ? ["--caption"] : [])]);
 run("ffmpeg", ["-y", "-loglevel", "error", "-i", raw, "-i", stamp, "-filter_complex", `[0:v]scale=${W}:${H}[v];[v][1:v]overlay=0:0`,
   "-c:v", "libx264", "-preset", "veryfast", "-crf", "28", "-pix_fmt", "yuv420p", "-c:a", "copy", out]);
 fs.rmSync(raw, { force: true });

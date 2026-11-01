@@ -65,8 +65,10 @@ and the only thing / holding it *up*   " / " breaks the line there
 # a comment
 ```
 
-The caption is the script. It is never transcribed from the voice. The word caption is off in renders by default; pass
-`--caption` to show it.
+The caption is the script. It is never transcribed from the voice. The word caption is off in renders by default; set
+`"caption": true` in `reel.json` to burn it in (`stills`, `draft` and `render` follow it; by hand, `--caption`). Turn it on
+for a voice the viewer may not follow by ear (Hindi, Hinglish, a borrowed narration) or when asked. White caption type
+needs a dark band behind it at the top of the frame: no check measures that, so look at a captioned still.
 
 ## A 2D scene
 
@@ -134,6 +136,7 @@ Each prints PASS or FAIL with the reason and exits 1 on a FAIL. A check that cou
 | Command | What fails |
 |---|---|
 | `check.py plan <slug>` | a caption block over 8 words, two key words in a block, a scene change outside silence (it also warns on type under 32 px) |
+| caption fit (in `check_plan`) | a caption block too wide for two lines with the real font: FAIL when the caption is on, WARN when it is off |
 | `check.py render <slug> <mp4>` | nothing moving for over 1.2 s, bare ground during a scene change |
 | `motion.py <mp4> --words reels/<slug>/words.json --keep a,b` | a move too fast to follow inside a world, a cut or snap, a near-freeze then a jump, a scene under 2 s |
 | `joins.py <slug> <mp4> --sheet out.jpg` | a scene change where one frame swaps the picture; the sheet shows every change |
