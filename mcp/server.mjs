@@ -120,7 +120,7 @@ const TOOLS = {
       const w = await run("whisper-cli", ["--help"], 60_000, ROOT);
       steps.push({ step: "whisper (optional)", pass: true, out: w.pass ? "whisper-cli found" : "whisper-cli missing: align.py falls back to the ElevenLabs alignment. On a Mac: brew install whisper-cpp" });
       for (const s of steps) s.out = s.out.split("\n").slice(-3).join("\n");
-      return { home: ROOT, keys: `put ELEVENLABS_API_KEY in ${path.join(ROOT, ".env.local")}; never paste it in chat`, ...verdict(steps) };
+      return { home: ROOT, keys: `put ELEVENLABS_API_KEY or SARVAM_API_KEY in ${path.join(ROOT, ".env.local")}; never paste it in chat`, ...verdict(steps) };
     },
   },
   new_reel: {
