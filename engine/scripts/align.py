@@ -259,7 +259,11 @@ if __name__ == "__main__":
     sil, dur = silences(voice)
     n_missed = 0
     if by_sentence.exists() and not exact.exists():   # a voice the English recogniser cannot follow (Hindi, Hinglish)
-        from_sentences(words, json.loads(by_sentence.read_text())["sentences"], sil)
+        spans = json.loads(by_sentence.read_text())["sentences"]
+        from_sentences(words, spans, sil)
+        # the gap between two sentences is a pause even when music or room noise under the voice hides it from silences()
+        gaps = [[round(a["e"], 3), round(b["t"], 3)] for a, b in zip(spans, spans[1:]) if b["t"] - a["e"] >= 0.15]
+        sil = sorted(sil + [g for g in gaps if not any(s0 <= g[0] and g[1] <= s1 for s0, s1 in sil)])
         print(f"{len(words)} caption words, timed by sentence (edges exact, words inside by syllable, about ±0.3 s)")
     else:
         heard = from_alignment(exact) if exact.exists() else spell_numbers(recognise(voice))

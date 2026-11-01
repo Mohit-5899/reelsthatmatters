@@ -10,7 +10,7 @@
 // that is replaced on every update (Claude Code may run npm install there too, so node_modules alone proves nothing),
 // so it works in RTM_HOME instead (~/reelsthatmatters by default); `setup` puts the engine there and installs it, and
 // never touches the reels already in it.
-import { spawn } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -22,8 +22,10 @@ const ROOT = process.env.RTM_HOME ? path.resolve(process.env.RTM_HOME.replace(/^
   : fs.existsSync(path.join(CODE, "node_modules")) && fs.existsSync(path.join(CODE, ".git")) ? CODE : path.join(os.homedir(), "reelsthatmatters");
 const ENGINE = path.join(ROOT, "engine");
 const REELS = path.join(ENGINE, "reels");
-const PY = process.env.SH_PYTHON || "python3";
-const VERSION = "0.1.2";
+// the first Python that has numpy and Pillow: installing a Homebrew tool can put a bare python3 first on the PATH
+const PY = process.env.SH_PYTHON || ["python3", "/usr/bin/python3", "/opt/homebrew/bin/python3", "/usr/local/bin/python3"]
+  .find((p) => spawnSync(p, ["-c", "import numpy, PIL"], { stdio: "ignore" }).status === 0) || "python3";
+const VERSION = "0.1.3";
 const SLUG = /^[a-z0-9][a-z0-9-]{0,60}$/;
 
 // one step = one command in the engine folder; the result is its exit code and the last of its output
