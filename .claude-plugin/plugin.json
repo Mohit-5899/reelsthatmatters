@@ -1,7 +1,7 @@
 {
   "name": "reelsthatmatters",
   "displayName": "Reels That Matter",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Researched, narrated explainer reels animated in code: a research agent, hooks you pick, a cloned or stock voice, 2D canvas or real 3D scenes with CC0 models, optional music, and checks that pass or fail every render.",
   "author": { "name": "Logline" },
   "license": "MIT",

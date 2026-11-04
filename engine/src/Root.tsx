@@ -19,7 +19,8 @@ export const Root: React.FC = () => (
     calculateMetadata={({ props }) => {
       const p = props as unknown as ReelProps;
       const fps = withOverrides(theme, p.config.theme).fps;
-      return { fps, durationInFrames: Math.max(1, Math.ceil(p.data.duration * fps)) };
+      const [width, height] = p.config.size ?? [W, H]; // "size" in reel.json, such as [1920, 1080] for 16:9
+      return { fps, width, height, durationInFrames: Math.max(1, Math.ceil(p.data.duration * fps)) };
     }}
   />
   </>

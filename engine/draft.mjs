@@ -21,7 +21,9 @@ if (!slug || !fs.existsSync(path.join(reelDir, "words.json"))) {
 const outDir = path.join(reelDir, "draft");
 fs.mkdirSync(outDir, { recursive: true });
 const out = path.join(outDir, `${slug}-DRAFT.mp4`);
-const W = 540, H = 960;
+const cfgPath = path.join(reelDir, "reel.json");
+const [FW, FH] = (fs.existsSync(cfgPath) && JSON.parse(fs.readFileSync(cfgPath, "utf-8")).size) || [1080, 1920];
+const W = FW / 2, H = FH / 2;
 const run = (cmd, a) => {
   const r = spawnSync(cmd, a, { cwd: dir, stdio: ["ignore", "inherit", "inherit"] });
   if (r.status !== 0) { console.error(`draft: ${cmd} failed`); process.exit(1); }

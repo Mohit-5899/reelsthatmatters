@@ -28,8 +28,9 @@ import subprocess
 import sys
 
 import numpy as np
+from frame import fit
 
-W, H = 108, 192
+W, H = fit(108, 192)
 MAX_QUARTER, FREEZE, JUMP, STILL, STILL_SECONDS = 12.0, 1.0, 8.0, 0.05, 1.2
 CUT, CUT_RATIO, CHANGE, PACKED = 30.0, 2.5, 80.0, 0.75
 

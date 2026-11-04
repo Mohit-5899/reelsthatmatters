@@ -7,8 +7,9 @@ It does not judge how much moves, only how fast.
 """
 import subprocess
 import sys
+from frame import fit
 
-W, H = 108, 192
+W, H = fit(108, 192)
 N = W * H
 LIMIT = 12.0
 mp4 = sys.argv[1]

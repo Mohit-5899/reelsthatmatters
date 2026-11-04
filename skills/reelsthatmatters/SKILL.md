@@ -54,6 +54,15 @@ The saved workflow in `workflow/express.workflow.js` runs steps 5 to 9 on its ow
 
 A 3D scene renders slower (WebGL), so keep 3D for the scenes where depth carries the point.
 
+## 16:9
+
+A reel is 1080x1920 unless `reel.json` sets `"size": [1920, 1080]`. The stage, caption, 3D canvas, draft and every check
+follow it. For a wide cut of a finished vertical reel, copy its folder (voice, `words.json`, scenes) to a new slug, set the
+size, and move each scene's pieces into the wide frame: type on one side, the picture on the other. Do not crop the vertical
+picture, and do not put it in the middle with bars at the sides. A quick way that keeps the scenes' code and timing: two
+wrapper divs, each 1080x1920 with `transform-origin: 0 0`, that translate and scale the vertical coordinates, one into the
+left half for the type and one into the right half for the picture, centred on what each beat shows.
+
 ## caption.txt
 
 ```

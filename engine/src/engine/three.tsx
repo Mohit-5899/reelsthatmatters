@@ -8,25 +8,26 @@ import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { HDRLoader } from "three/examples/jsm/loaders/HDRLoader.js";
-import { cancelRender, continueRender, delayRender, staticFile } from "remotion";
+import { cancelRender, continueRender, delayRender, staticFile, useVideoConfig } from "remotion";
 import type { Cam } from "./camera";
 
 export const W3 = 1080;
 export const H3 = 1920;
 
-/** the vertical field of view that matches a pinhole camera's focal length (in pixels of the 1920-high frame) */
-export const fovOf = (focal: number) => (2 * Math.atan(H3 / 2 / focal) * 180) / Math.PI;
+/** the vertical field of view that matches a pinhole camera's focal length (in pixels of a frame `h` high) */
+export const fovOf = (focal: number, h = H3) => (2 * Math.atan(h / 2 / focal) * 180) / Math.PI;
 
 /** puts the Three.js camera where the pinhole camera is, every frame, before the frame is drawn */
 const CameraRig: React.FC<{ cam: Cam }> = ({ cam }) => {
   const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera;
+  const { width: w, height: h } = useVideoConfig();
   useLayoutEffect(() => {
     camera.position.set(...cam.eye);
-    camera.fov = fovOf(cam.focal);
+    camera.fov = fovOf(cam.focal, h);
     camera.near = 0.05;
     camera.far = 2000;
     // the pinhole camera's centre (cx, cy) may sit off the middle of the frame: shift the lens to match
-    camera.setViewOffset(W3, H3, W3 / 2 - cam.cx, H3 / 2 - cam.cy, W3, H3);
+    camera.setViewOffset(w, h, w / 2 - cam.cx, h / 2 - cam.cy, w, h);
     camera.lookAt(...cam.at);
     camera.updateProjectionMatrix();
   });
@@ -75,14 +76,16 @@ export const Floor: React.FC<{ color?: string; size?: number; y?: number }> = ({
 /** `fog` fades the world into the background from `fog[0]` to `fog[1]` world units away, so the floor never shows an edge */
 export const World3D: React.FC<{ cam: Cam; background?: string; fog?: [number, number] | null; children: React.ReactNode }> = ({
   cam, background = "#111214", fog = [14, 45], children,
-}) => (
+}) => {
+  const { width: w, height: h } = useVideoConfig();
+  return (
   <ThreeCanvas
-    width={W3}
-    height={H3}
+    width={w}
+    height={h}
     shadows="percentage"
     dpr={1}
     gl={{ antialias: true, preserveDrawingBuffer: true, toneMapping: THREE.ACESFilmicToneMapping, outputColorSpace: THREE.SRGBColorSpace }}
-    camera={{ fov: fovOf(cam.focal), position: cam.eye, near: 0.05, far: 2000 }}
+    camera={{ fov: fovOf(cam.focal, h), position: cam.eye, near: 0.05, far: 2000 }}
     style={{ position: "absolute", inset: 0 }}
   >
     <color attach="background" args={[background]} />
@@ -90,7 +93,8 @@ export const World3D: React.FC<{ cam: Cam; background?: string; fog?: [number, n
     <CameraRig cam={cam} />
     {children}
   </ThreeCanvas>
-);
+  );
+};
 
 // Files load once per render tab and are kept, so a model is not fetched again for every frame.
 const gltfCache = new Map<string, Promise<THREE.Group>>();

@@ -15,9 +15,11 @@ Thresholds sit in LOOK below; a reel overrides any of them in reel.json under "l
 import colorsys, json, subprocess, sys
 from pathlib import Path
 import numpy as np
+from frame import fit
 
 ROOT = Path(__file__).resolve().parent.parent
 W, H, FPS = 135, 240, 4
+W, H = fit(W, H)
 LOOK = {
     "saturation": [0.03, 0.45],   # mean saturation of the lit pixels: under is washed out (WARN), over is garish (FAIL)
     "garish": 0.25,               # share of pixels above 0.85 saturation

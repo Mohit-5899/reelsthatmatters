@@ -25,7 +25,7 @@ const REELS = path.join(ENGINE, "reels");
 // the first Python that has numpy and Pillow: installing a Homebrew tool can put a bare python3 first on the PATH
 const PY = process.env.SH_PYTHON || ["python3", "/usr/bin/python3", "/opt/homebrew/bin/python3", "/usr/local/bin/python3"]
   .find((p) => spawnSync(p, ["-c", "import numpy, PIL"], { stdio: "ignore" }).status === 0) || "python3";
-const VERSION = "0.1.4";
+const VERSION = "0.1.5";
 const SLUG = /^[a-z0-9][a-z0-9-]{0,60}$/;
 
 // one step = one command in the engine folder; the result is its exit code and the last of its output

@@ -17,9 +17,10 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+from frame import fit
 
 ROOT = Path(__file__).resolve().parent.parent
-W, H = 108, 192
+W, H = fit(108, 192)
 N = W * H
 
 

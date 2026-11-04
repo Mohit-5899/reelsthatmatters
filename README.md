@@ -5,7 +5,7 @@ sources, you pick one of several hooks and approve the script, and agents draw e
 3D with Three.js, lit models and soft shadows. Every move lands on a spoken word, and measured checks pass or fail every
 render before it ships.
 
-1080x1920, 60 fps, made for Reels, Shorts and TikTok.
+1080x1920, 60 fps, made for Reels, Shorts and TikTok, or 16:9 (1920x1080) for YouTube and the web.
 
 ## Install as a Claude Code plugin
 

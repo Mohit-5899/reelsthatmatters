@@ -3,7 +3,7 @@
 // ink; once said it turns regular grey within a frame, the line re-centres within a frame, and each new word sharpens
 // out of blur where it stands. One key word per block keeps full ink inside a selection box that arrives a few frames later.
 import React, { useMemo } from "react";
-import { Easing, interpolateColors, useCurrentFrame } from "remotion";
+import { Easing, interpolateColors, useCurrentFrame, useVideoConfig } from "remotion";
 import { measureText } from "@remotion/layout-utils";
 import { useReel } from "./context";
 import { useLightness } from "./Ground";
@@ -125,6 +125,7 @@ const WordSpan: React.FC<{ i: number; active: boolean; ink: string; spoken: stri
 export const Caption: React.FC = () => {
   const { theme, tl } = useReel();
   const f = useCurrentFrame();
+  const { width: vw } = useVideoConfig();
   const k = useLightness();
   const laid = useMemo(() => tl.blocks.map((b) => layout(b, tl, theme)), [tl, theme]);
   const block = tl.blocks.find((b) => f >= b.from && f < b.to);
@@ -144,7 +145,7 @@ export const Caption: React.FC = () => {
   return (
     <div
       style={{
-        position: "absolute", left: 0, width: 1080, top: block.slot === "top" ? c.top : c.bottom,
+        position: "absolute", left: 0, width: vw, top: block.slot === "top" ? c.top : c.bottom,
         fontFamily: theme.font.caption, fontSize: c.size, lineHeight: `${c.lineHeight}px`, letterSpacing: "-0.01em",
         opacity: 1 - out, filter: !meas && out > 0 ? `blur(${out * 8}px)` : undefined,
       }}

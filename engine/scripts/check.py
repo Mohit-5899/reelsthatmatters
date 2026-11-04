@@ -9,6 +9,7 @@ Exits with 1 when any line says FAIL. A WARN needs judgement: read it, decide, c
 import json, re, subprocess, sys
 from pathlib import Path
 import numpy as np
+from frame import fit
 
 ROOT = Path(__file__).resolve().parent.parent
 MIN_TYPE = 32       # px on a 1080-wide frame: smaller than this, a claim is just texture on a phone
@@ -102,6 +103,7 @@ def plan(slug):
 
 
 def frames(mp4, w=90, h=160, fps=30):
+    w, h = fit(w, h, mp4)
     raw = subprocess.run(["ffmpeg", "-v", "error", "-i", mp4, "-vf", f"fps={fps},scale={w}:{h},format=gray", "-f", "rawvideo", "-"],
                          capture_output=True, check=True).stdout
     return np.frombuffer(raw, np.uint8).reshape(-1, h, w).astype(np.int16), fps
@@ -122,7 +124,8 @@ def render(slug, mp4):
     say("FAIL" if worst[0] > MAX_STILL else "ok", f"longest stretch with nothing moving: {worst[0]:.2f} s at {worst[1]:.2f} s (limit {MAX_STILL} s)")
 
     # bare ground during a handover: the stage band stays flat for more than one frame at 30 fps
-    stage = a[:, int(160 * 520 / 1920):int(160 * 1450 / 1920), :]
+    rows = a.shape[1]  # the stage band: 520-1450 of a 1920-high frame, or 15%-92% of a wide one
+    stage = a[:, int(rows * 520 / 1920):int(rows * 1450 / 1920), :] if rows > a.shape[2] else a[:, int(rows * 0.15):int(rows * 0.92), :]
     for s, nxt in zip(d["scenes"], d["scenes"][1:]):
         mid = (d["words"][nxt["firstWord"] - 1]["e"] + d["words"][nxt["firstWord"]]["t"]) / 2
         lo, hi = max(0, int((mid - 0.4) * fps)), min(len(stage), int((mid + 0.4) * fps))

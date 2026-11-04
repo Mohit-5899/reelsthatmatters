@@ -1,7 +1,7 @@
 // No scene ever cuts. A scene exits as one block within the silence before the next scene's first word, and the next
 // scene is already mounted as it exits, so the ground never shows bare. Elements inside a scene enter on their own cues.
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { SceneContext, useReel } from "./context";
 import { ease, leaveEase, prog } from "./moves";
 
@@ -24,6 +24,7 @@ export const LEAD = 6; // scenes mount this many frames early: begin the first e
 export const Stage: React.FC<{ scenes: SceneMap }> = ({ scenes }) => {
   const { theme, tl } = useReel();
   const f = useCurrentFrame();
+  const { width: vw } = useVideoConfig();
   // the handover length: new reels set theme.flowFrames to 40-60 so a change is spread out, never packed into 10 frames
   const FLOWN = Math.max(FLOW, Number((theme as { flowFrames?: number }).flowFrames) || FLOW);
   // theme.pushFrames: a slower side push for a reel that wants no fades and no cuts (the default 14 frames is a whip)
@@ -159,7 +160,7 @@ export const Stage: React.FC<{ scenes: SceneMap }> = ({ scenes }) => {
         } else if (push) {
           // push handover: a sharp sideways push with both scenes moving together and no blur
           const xAt = (fr: number) =>
-            (s.index === 0 ? 0 : (1 - prog(fr, mountAt, PUSHN, ease.inOut)) * 1080) - (last ? 0 : prog(fr, leaveAt, PUSHN, ease.inOut) * 1080);
+            (s.index === 0 ? 0 : (1 - prog(fr, mountAt, PUSHN, ease.inOut)) * vw) - (last ? 0 : prog(fr, leaveAt, PUSHN, ease.inOut) * vw);
           style = { transform: `translateX(${xAt(f).toFixed(1)}px)` };
         } else if (theme.handover === "scroll") {
           // the old card exits through the top while the new one rises from below, in a single 220 ms move
@@ -208,6 +209,7 @@ export const Stage: React.FC<{ scenes: SceneMap }> = ({ scenes }) => {
 /** the centred column that every scene is built in */
 export const Column: React.FC<{ children: React.ReactNode; width?: number }> = ({ children, width }) => {
   const { theme } = useReel();
+  const { width: vw, height: vh } = useVideoConfig();
   const w = width ?? theme.stage.width;
-  return <div style={{ position: "absolute", left: (1080 - w) / 2, width: w, top: 0, height: 1920 }}>{children}</div>;
+  return <div style={{ position: "absolute", left: (vw - w) / 2, width: w, top: 0, height: vh }}>{children}</div>;
 };

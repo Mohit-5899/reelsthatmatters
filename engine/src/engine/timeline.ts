@@ -14,7 +14,7 @@ export type ChromeConfig =
 export type Tone = "prompt" | "ok" | "warn" | "alarm" | "dim" | "plain";
 /** an optional music bed: the file (relative to the reel's folder), its level under the voice, and fades in seconds */
 export type MusicConfig = { file: string; volume?: number; fadeIn?: number; fadeOut?: number };
-export type ReelConfig = { theme?: DeepPartial<Theme>; chrome?: ChromeConfig; music?: MusicConfig };
+export type ReelConfig = { size?: [number, number]; theme?: DeepPartial<Theme>; chrome?: ChromeConfig; music?: MusicConfig };
 
 export type Scene = SceneData & { index: number; from: number; to: number; mid: number; lastWord: number };
 export type Block = BlockData & { index: number; from: number; to: number };
